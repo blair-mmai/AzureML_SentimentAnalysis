@@ -82,7 +82,7 @@ There are several business use cases for Text Analytics API services, such as (1
 * Documentation Management & Compliance:
 > Classify and redact documents that have sensitive information
 
-Azure ML studio has pre-defined experiments so that even with little to no programming experience, you can run an ML experiment. Ready to give it a try? Follow the step by step tutorial on our Tutorial page.
+Azure ML studio has pre-defined experiments so that even with little to no programming experience, you can run an ML experiment. Ready to give it a try? Follow the step by step tutorial on our [Tutorial page](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/Microsoft-Azure-ML-Studio---Sentiment-Analysis-Tutorial).
 
 References used:
 (1) https://www.zdnet.com/article/the-top-cloud-providers-of-2020-aws-microsoft-azure-google-cloud-hybrid-saas/ 
