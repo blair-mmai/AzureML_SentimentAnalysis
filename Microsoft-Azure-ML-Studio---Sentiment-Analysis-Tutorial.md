@@ -38,6 +38,7 @@ You should now be at this screen:
 ![Workspace View](https://user-images.githubusercontent.com/55206834/86646031-e7a74280-bfac-11ea-9b6d-1d40106c95af.png)
 
 ### **Step 2 – Load your Dataset** (2)
+
 * Click the _+NEW_ in the bottom left of the workspace window
 
 ![New](https://user-images.githubusercontent.com/55206834/86649646-f0e5de80-bfaf-11ea-8ed6-0a8636ed4353.png)
@@ -60,6 +61,29 @@ You should now be at this screen:
 Your screen should now look like this:
 
 ![Final screen - Step 2](https://user-images.githubusercontent.com/55206834/86649703-fcd1a080-bfaf-11ea-9375-87f612ae98f5.png)
+
+### **Step 3 – Setup your Sentiment Analysis Architecture**
+
+We are now ready to set up our Architecture. At the end of the tutorial, your Architecture should look like this:
+
+### **Step 3a – Create an Experiment**
+
+* Click the _+NEW_ in the bottom left of the workspace window
+
+
+* Click _EXPERIMENT_
+* At this point, you can either choose a Blank Experiment or Experiment template (if you want to start from an existing template)
+* For the purposes of this tutorial, click _Blank Experiment_
+
+* You will see this blank architecture on the screen guiding you in how to set up your experiment architecture:
+
+Now it is time to start adding the modules to your experiment canvas.
+
+### **Step 3b – Load Your Data**
+
+* Locate your dataset in My Datasets on the left-hand menu under My Datasets
+* Drag & Drop the Dataset to the right-hand side where your architecture canvas is
+
 
 
 **Other reference material:**
