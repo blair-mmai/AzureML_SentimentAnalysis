@@ -66,6 +66,8 @@ Your screen should now look like this:
 
 We are now ready to set up our Architecture. At the end of the tutorial, your Architecture should look like this:
 
+![Architecture](https://user-images.githubusercontent.com/55206834/86651775-d01e8880-bfb1-11ea-85cb-810bc285cf18.png)
+
 ### **Step 3a – Create an Experiment**
 
 * Click the _+NEW_ in the bottom left of the workspace window
