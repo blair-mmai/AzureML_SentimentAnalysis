@@ -73,7 +73,7 @@ There are several business use cases for Text Analytics API services, such as (1
 * Identifying customer insights to predict or prevent things like churn:
 > Analyzing customer satisfaction survey results 
 > Analyzing recorded inbound customer calls
-> Monitor social media feeds <-- this is the one we will examine in this tutorial
+> Monitor social media feeds **this is the one we will examine in this tutorial**
 > Opinion mining
 
 * Optimize Support to save money:
