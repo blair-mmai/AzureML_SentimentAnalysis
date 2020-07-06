@@ -70,12 +70,16 @@ We are now ready to set up our Architecture. At the end of the tutorial, your Ar
 
 ### **Step 3a – Create an Experiment**
 
+* Click _EXPERIMENT_
 * Click the _+NEW_ in the bottom left of the workspace window
 
+![New](https://user-images.githubusercontent.com/55206834/86652133-21c71300-bfb2-11ea-8685-e0b2c743a750.png)
 
-* Click _EXPERIMENT_
+
 * At this point, you can either choose a Blank Experiment or Experiment template (if you want to start from an existing template)
 * For the purposes of this tutorial, click _Blank Experiment_
+
+
 
 * You will see this blank architecture on the screen guiding you in how to set up your experiment architecture:
 
