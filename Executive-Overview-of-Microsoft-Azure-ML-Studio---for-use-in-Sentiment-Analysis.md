@@ -8,15 +8,15 @@ This section is written to help an executive understand the basics of Platform-a
 
 PaaS is a category of cloud computing services that provides a platform (a medium to use) for customers to develop, run, and manage applications with simplicity. PaaS is especially powerful for developing and launching Apps without requiring the complexity of building and maintaining the infrastructure that is typically required.
 
-The PaaS space is led by 3 companies. Amazon with a market-leading AWS offering, Microsoft with Azure as the second-largest (1) PaaS at 17.6% (2) of the market in February of 2020, and Google with a 3rd place cloud offering at roughly 10% market share. All three of these market leaders offer value as a PaaS, however, our focus will be on the Azure platform developed by Microsoft for this tutorial.
+The PaaS space is led by 3 companies. Amazon with a market-leading AWS offering, Microsoft with Azure as the second-largest (1) PaaS at 17.6% (2) of the market in February of 2020, and Google with a 3rd place cloud offering at roughly 10% market share. All three of these market leaders offer value as a PaaS (3), however, our focus will be on the Azure platform developed by Microsoft for this tutorial.
 
-
+![Figure 1 Main ML Market Players Comparison](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/issues/3)
 
 Figure 1 Main ML Market Players Comparison
 
-PaaS through Azure as a common platform simplifies training and integration across organizations in a cost-effective way. Azure and other PaaS Services are typically paid for by usage, therefore, allowing rapid scaling (3) in a manner that is cost-effective. 
+PaaS through Azure as a common platform simplifies training and integration across organizations in a cost-effective way. Azure and other PaaS Services are typically paid for by usage, therefore, allowing rapid scaling (4) in a manner that is cost-effective. 
 
-Looking specifically at Text Analytics capabilities, the table below does a good job of summarizing the capabilities you will find across the various PaaS platforms (4):
+Looking specifically at Text Analytics capabilities, the table below does a good job of summarizing the capabilities you will find across the various PaaS platforms (5):
  
 ![Figure 1 Comparison of NLP Services](https://user-images.githubusercontent.com/55206834/86625341-f254de00-bf92-11ea-81a8-f0297571805d.png)
 
@@ -105,8 +105,8 @@ Azure ML studio has pre-defined experiments so that even with little to no progr
 References used:
 (1) https://www.zdnet.com/article/the-top-cloud-providers-of-2020-aws-microsoft-azure-google-cloud-hybrid-saas/ 
 (2) https://www.parkmycloud.com/blog/aws-vs-azure-vs-google-cloud-market-share/ 
-(3) https://www.youtube.com/watch?v=KXkBZCe699A 
-(4) https://medium.com/kontikilabs/comparing-machine-learning-ml-services-from-various-cloud-ml-service-providers-63c8a2626cb6 
+(3) https://www.slideshare.net/ivoandreev/azure-machine-learning-and-ml-on-premises
+(4) https://www.youtube.com/watch?v=KXkBZCe699A 
+(5) https://medium.com/kontikilabs/comparing-machine-learning-ml-services-from-various-cloud-ml-service-providers-63c8a2626cb6 
 
-(X) https://www.slideshare.net/ivoandreev/azure-machine-learning-and-ml-on-premises
 
