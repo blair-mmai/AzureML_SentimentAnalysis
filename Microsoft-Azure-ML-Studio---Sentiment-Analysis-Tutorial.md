@@ -31,5 +31,9 @@ Now that you have Azure access and the file you want to use downloaded; we are r
 * Navigate to [https://studio.azureml.net/](https://studio.azureml.net/) and log on to Azure studio 
 * Once logged in, select your workspace from the top right-hand menu
 
+![Select Workspace](https://user-images.githubusercontent.com/55206834/86645925-d3634580-bfac-11ea-8d43-255b5d41f7ce.png)
+
+You should now be at this screen:
+
 
 
