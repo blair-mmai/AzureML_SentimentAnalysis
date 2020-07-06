@@ -259,6 +259,62 @@ You can now compare the results you achieved in this tutorial to the results of 
 Feel free to play around with the tutorial and change your data pre-processing or the model you used or it’s parameters.
 Team Bathurst found we achieved similar results to the NLP IND assignment question #2 using this tutorial in far less time than it took to build our code submission. 
 
+## **Deploying your model**
+
+When you are satisfied with your model, it is time to deploy it to production.  
+
+## **Step 1 - Convert the training experiment to a Predictive experiment**
+
+* Click >>> _SET UP WEB SERVICE_ and then _Update predictive experiment_
+
+![setup web service](https://user-images.githubusercontent.com/55206834/86663497-c8fc7800-bfbb-11ea-9609-53ff2b61fa15.pn)
+
+![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png) At this point, if you don’t see the _SET UP WEB SERVICE_ option, you may not have run your full experiment, please go back and do so now and try again.
+
+You will now see a second tab with your Predictive experiment.
+
+![pred exp](https://user-images.githubusercontent.com/55206834/86663301-95b9e900-bfbb-11ea-978e-68a16abfa287.png)
+
+* Select _RUN_
+* Visualize the Score Model to ensure it has all the features you expect
+* The Score Model will contain all the features used to train the model plus 2 other features (Scored Labels, and Scored Probabilities) 
+* Insert _Select Columns in Dataset_ between the _Score Model_ and _Web service output_ and make sure to **connect your nodes**
+* Select _Launch column selector_ and select the following columns: **Scored Labels** and **Scored Probabilities**
+* _Run_ again the Predictive experiment to get the following: 
+
+The Web service can now be deployed 
+
+## **Step 2 - Deploy**
+
+* Click _DEPLOY WEB SERVICE_ 
+
+![deploy web service](https://user-images.githubusercontent.com/55206834/86663112-630ff080-bfbb-11ea-80bc-68ddabbc315a.png)
+
+* Click _Deploy_ 
+
+![deploy 2](https://user-images.githubusercontent.com/55206834/86663217-7e7afb80-bfbb-11ea-9a09-399d04fce5cf.png)
+
+## **Step 3 – Test**
+
+* You can test your newly created web service by selecting Test Web Service
+
+![test](https://user-images.githubusercontent.com/55206834/86663701-fe08ca80-bfbb-11ea-9953-736daa295c5a.png)
+
+You will see a screen to test your web service.  Type in a sentence and see your prediction. 
+
+![test 2](https://user-images.githubusercontent.com/55206834/86663780-11b43100-bfbc-11ea-90fb-b1dfd906de35.png)
+
+# **Conclusion**
+
+We started this exercise with a business problem to solve.  
+As a member of the Data Science team at Bathurst Inc., you have been tasked to create a sentiment analysis tool using Microsoft Azure ML Studio to predict whether tweets related to your products and services are positive and negative for the purposes of:
+
+* Providing the customer experience team with “strong positive” tweets so they can generate an outbound marketing campaign to get promoters to provide online recommendations and strengthen your online presence
+* Providing the customer retention team with “strong negative” tweets so they can address the issues with the customers and turn detractors into (at worst) neutral, (at best) promoters of the company
+
+Now that you have a sentiment analysis experiment, you can easily extend it for use as an API in a custom built script for free (for up to 1,000 transactions) to test if this is valuable by:
+* Scraping tweets and classifying them as positive or negative
+* Generating some reports on that data for your customer experience team
 
 **Other reference material:**
 (1) for more information on setting up your workspace, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-workspace
@@ -267,4 +323,6 @@ Team Bathurst found we achieved similar results to the NLP IND assignment questi
 (4) To learn more about the hashing function, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/feature-hashing?redirectedfrom=MSDN
 (5) To learn more about how to split data in Azure ML, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/split-data?redirectedfrom=MSDN
 (6) To learn more about training models, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/train-model?redirectedfrom=MSDN
+(7) For more information on web services, please refer to:https://services.azureml.net/subscriptions/9887b0c8-8f21-4ab3-9265-d4e879c54888/resourceGroups/bamservice/providers/Microsoft.MachineLearning/webServices/Sentiment2create.2020.7.3.22.56.47.8/test/rrs
+
 
