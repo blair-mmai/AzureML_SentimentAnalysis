@@ -115,13 +115,59 @@ Now it is time to start adding the modules to your experiment canvas.
 * > Click _Launch Column selector_
 * > Select the _Sentence_ field to be pre-processed
 
+![Sentence](https://user-images.githubusercontent.com/55206834/86654338-df9ed100-bfb3-11ea-9179-f4d6c59f519f.png)
 
 * Run the module by right-clicking on the module and selecting _Run Selected_ from the menu 
 * You will know it completed properly by the green checkmark that shows up
+
+![Run Success](https://user-images.githubusercontent.com/55206834/86654388-e9283900-bfb3-11ea-89f3-34c8a1bb2797.png)
+
+
+### **Step 3d – Vectorization**
+
+The next step is to extract features you want to use using feature hashing.
+
+* In the search box, enter “_feature_”, and you see _Feature Hashing_ Module under Text Analytics
+
+![hashing](https://user-images.githubusercontent.com/55206834/86654927-55a33800-bfb4-11ea-8cf6-21d40f5edb2d.png)
+
+* Drag and Drop _Feature Hashing_
+* Connect the output of the Preprocess Text module to the input of the Feature Hashing module
+
+![hashing success](https://user-images.githubusercontent.com/55206834/86654885-4e7c2a00-bfb4-11ea-8fe7-743fc216ec5c.png)
+
+* _Launch column selector_ to select the features you want to include
+* For the purposes of this tutorial, Select _BEGIN WITH NO COLUMNS_ and select _Preprocessed Sentence_ 
+
+![begin with no columns](https://user-images.githubusercontent.com/55206834/86656100-36f17100-bfb5-11ea-9194-15519e89fd57.png)
+
+* Set the properties you want to use to vectorize the data
+* For the purposes of this tutorial, we have used hashing **bitsize** of _8_  with **n-grams** of _1_
+
+![properties hash](https://user-images.githubusercontent.com/55206834/86655770-f98ce380-bfb4-11ea-9dde-c3a7905bea03.png)
+
+* Run the module by right-clicking on it and selecting Run (remember to look for the green checkmark of a successful run before moving on)
+
+### **Step 3e – Select the data to pass to your model**
+
+After running the feature hashing modules, we now have clean data with new vectorized features. We need to select those features and the target features to pass to our ML algorithm.
+
+There is a _Select Columns in Dataset_ module available to assist us with this.
+* In the search box, enter “_select_”, and you see _Select Columns in Dataset_ Module under Data Transformation
+
+![search select cols](https://user-images.githubusercontent.com/55206834/86657043-eb8b9280-bfb5-11ea-9b0b-ca652e13a881.png)
+
+* Drag and Drop _Select Columns in Dataset_ to your canvas
+* Connect the _Feature Hashing_ module to * Select Columns in Dataset
+
+![connect](https://user-images.githubusercontent.com/55206834/86656720-ac5d4180-bfb5-11ea-8b21-2ea50e85c0d3.png)
+
+* Set properties by clicking on the module, and then clicking on _Launch column selector_
+
 
 
 **Other reference material:**
 (1) for more information on setting up your workspace, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-workspace
 (2) For another tutorial example, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/tutorial-part1-credit-risk
 (3) To learn more about preprocessing data in Azure ML studio, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/preprocess-text?redirectedfrom=MSDN
-
+(4) To learn more about the hashing function, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/feature-hashing?redirectedfrom=MSDN
