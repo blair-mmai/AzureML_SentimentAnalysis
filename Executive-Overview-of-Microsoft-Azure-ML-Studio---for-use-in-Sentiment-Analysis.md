@@ -1,10 +1,8 @@
-Welcome to the AzureMLTutorial_SentimentAnalysis wiki! Below you will find an Executive Overview of 
+This section is written to help an executive understand the basics of Platform-as-a-service (PaaS) solution, the different cloud offerings on the market, and associated costs/benefits of Microsoft Azure more specifically.
 
 # **Executive Overview**
 
 ## **Cloud and AI - An Overview**
-
-This section is written to help an executive understand the basics of Platform-as-a-service (PaaS) solution, the different cloud offerings on the market, and associated costs/benefits of Microsoft Azure more specifically.
 
 PaaS is a category of cloud computing services that provides a platform (a medium to use) for customers to develop, run, and manage applications with simplicity. PaaS is especially powerful for developing and launching Apps without requiring the complexity of building and maintaining the infrastructure that is typically required.
 
