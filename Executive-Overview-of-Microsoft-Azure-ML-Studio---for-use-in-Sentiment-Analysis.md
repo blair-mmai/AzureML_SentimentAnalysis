@@ -71,16 +71,16 @@ The Text Analytics API can be used for four (4) types of Analysis (11), however,
 There are several business use cases for Text Analytics API services, such as (16): 
 
 * Identifying customer insights to predict or prevent things like churn:
-> Analyzing customer satisfaction survey results 
-> Analyzing recorded inbound customer calls
-> Monitor social media feeds **this is the one we will examine in this tutorial**
-> Opinion mining
+* > Analyzing customer satisfaction survey results 
+* > Analyzing recorded inbound customer calls
+* > Monitor social media feeds **this is the one we will examine in this tutorial**
+* > Opinion mining
 
 * Optimize Support to save money:
-> Process and categorize support incidents
+* > Process and categorize support incidents
 
 * Documentation Management & Compliance:
-> Classify and redact documents that have sensitive information
+* > Classify and redact documents that have sensitive information
 
 Azure ML studio has pre-defined experiments so that even with little to no programming experience, you can run an ML experiment. Ready to give it a try? Follow the step by step tutorial on our [Tutorial page](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/Microsoft-Azure-ML-Studio---Sentiment-Analysis-Tutorial).
 
