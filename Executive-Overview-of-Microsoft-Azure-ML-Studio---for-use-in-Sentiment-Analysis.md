@@ -2,9 +2,11 @@ Welcome to the AzureMLTutorial_SentimentAnalysis wiki! Below you will find an Ex
 
 # **Executive Overview**
 
-## **What is a PaaS?**
+## **Cloud and AI - An Overview**
 
-Platform as a service (PaaS) is a category of cloud computing services that provides a platform (a medium to use) for customers to develop, run, and manage applications with simplicity. PaaS is especially powerful for developing and launching Apps without requiring the complexity of building and maintaining the infrastructure that is typically required.
+This section is written to help an executive understand the basics of Platform-as-a-service (PaaS) solution, the different cloud offerings on the market, and associated costs/benefits of Microsoft Azure more specifically.
+
+PaaS is a category of cloud computing services that provides a platform (a medium to use) for customers to develop, run, and manage applications with simplicity. PaaS is especially powerful for developing and launching Apps without requiring the complexity of building and maintaining the infrastructure that is typically required.
 
 The PaaS space is led by 3 companies. Amazon with a market-leading AWS offering, Microsoft with Azure as the second-largest (1) PaaS at 17.6% (2) of the market in February of 2020, and Google with a 3rd place cloud offering at roughly 10% market share. All three of these market leaders offer value as a PaaS, however, our focus will be on the Azure platform developed by Microsoft for this tutorial.
 
@@ -16,7 +18,7 @@ Looking specifically at Text Analytics capabilities, the table below does a good
 
 Figure 1 Comparison of NLP Services
 
-We explore Azure specifically for Sentiment Analysis below as our platform of choice. 
+Given Bathurst Inc. is trying to understand it's customer's sentiment in our tutorial example, we explore Azure specifically for Sentiment Analysis below as our platform of choice. 
 
 ## **Azure Machine Learning Studio**
 
