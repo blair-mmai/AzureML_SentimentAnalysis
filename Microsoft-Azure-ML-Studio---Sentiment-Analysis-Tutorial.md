@@ -146,7 +146,7 @@ The next step is to extract features you want to use using feature hashing.
 
 ![properties hash](https://user-images.githubusercontent.com/55206834/86655770-f98ce380-bfb4-11ea-9dde-c3a7905bea03.png)
 
-* Run the module by right-clicking on it and selecting Run (remember to look for the green checkmark of a successful run before moving on)
+* _Run_ the module by right-clicking on it and selecting Run (remember to look for the green checkmark of a successful run before moving on)
 
 ### **Step 3e – Select the data to pass to your model**
 
@@ -166,7 +166,98 @@ There is a _Select Columns in Dataset_ module available to assist us with this.
 * Select the required columns for ML to use ( In our case study, we **exclude** the columns “_Sentence_” and “_Preprocessed Sentence_”)
 * > Select all hashed columns (do this by **Beginning with all columns** and **excluding** the _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
 
-![begin with all cols](https://user-images.githubusercontent.com/55206834/86657670-6b196180-bfb6-11ea-8b58-9ab3cc23025f.png)
+![begin with all cols](https://user-images.githubusercontent.com/55206834/86657833-8dab7a80-bfb6-11ea-9dd7-5ec676ff0397.png)
+
+You should now see all your hashed features selected like this:
+
+![all cols property](https://user-images.githubusercontent.com/55206834/86658307-f3980200-bfb6-11ea-96f4-49d6285a7376.png)
+
+* _Run_ the module by right-clicking on it and selecting Run (remember to look for the green checkmark of a successful run before moving on)
+
+### **Step 3f – Split your data into training and testing data** (5)
+
+We will use Azure’s built-in Split Data module.
+* In the search box, enter “_split_”, and you see _Split Data_ Module under _Data Transformation_
+
+![split](https://user-images.githubusercontent.com/55206834/86659920-3efee000-bfb8-11ea-8243-fb47cb353b7d.png)
+
+* Drag and Drop _Split Data_
+* **Connect** the _Select Columns_ in Dataset module to _Split Data_
+
+![connect](https://user-images.githubusercontent.com/55206834/86659784-2098e480-bfb8-11ea-8ccd-22babc8020bc.png)
+
+* Set properties by clicking on the module
+* Select a single column for the stratification. In our instance: _Polarity_
+* _Run_ the module
+* Click on the module to set the properties
+* > In our example we split the data into _80% training_ data and _20% testing_ data
+
+![properties](https://user-images.githubusercontent.com/55206834/86659829-2989b600-bfb8-11ea-8498-2cf6eedf2496.png)
+
+We now have our dataset ready for training. Let us begin!
+
+### **Step 3g – Select and train your model** (6)
+
+* Instantiate the model by selecting the classification algorithm.
+* In the search box, enter “_classification_”, and you see the classification algorithms available
+* Choose your algorithm. In our tutorial, we will be using _Two-class Boosted Decision Tree_
+* Drag and Drop the classifier to your canvas
+
+![DT](https://user-images.githubusercontent.com/55206834/86660902-2b07ae00-bfb9-11ea-8019-6d396794bff2.png)
+
+* In the search box, enter “_Train_” to select the Train Model
+* Drag and Drop the _train model_ module to your canvas
+
+![train](https://user-images.githubusercontent.com/55206834/86660726-fd226980-bfb8-11ea-9065-7c2c603715da.png)
+
+* Connect _Two-class Boosted Decision Tree_ to the left input node of _Train Model_
+* Connect the _Training Dataset_ (output of Split Data) to the right input node of **Train Model**
+
+![Connect](https://user-images.githubusercontent.com/55206834/86660409-b59bdd80-bfb8-11ea-97bd-da2b99f031b4.png)
+
+* Set properties by clicking on the module _Train Model_ 
+* Click on _Launch Column Selector_ and select the Label column (_Polarity_ for this tutorial) in the properties of Train Model
+* Set the _properties_ for your model.
+* In our tutorial, we used:
+* > Max number of leaves = 20
+* > Min number of samples = 10
+* > Learning rate = 0.2
+* > Number of trees constructed = 100
+
+![properties](https://user-images.githubusercontent.com/55206834/86660521-cd736180-bfb8-11ea-8015-2387cfc54eee.png)
+
+* _Run_ the module
+
+The model training is now complete. 
+
+### **Step 3h – Evaluate your model’s performance**
+
+* In the search box, enter “_score_”, and you see _Score Model_ module
+* Drag and Drop the _Score Model_ to your canvas
+
+![score](https://user-images.githubusercontent.com/55206834/86661867-268fc500-bfba-11ea-87a9-1c328dee2525.png)
+
+* In the search box, enter “_Evaluate_”, and you see _Evaluate Model_ module
+* Drag and Drop the _Evaluate Model_ to your canvas
+
+![evaluate](https://user-images.githubusercontent.com/55206834/86661782-0e1faa80-bfba-11ea-96af-b42585fbfc96.png)
+
+* Connect the output node of _Train Model_ to the left input node of _Score Model_
+* Connect _Data Split_ (right output node) to right input node of _Score Model_
+* Connect _Score Model_ to _Evaluate Model_
+
+![connect](https://user-images.githubusercontent.com/55206834/86661600-df093900-bfb9-11ea-815a-90d1a2711b88.png)
+
+* _Run_ the module
+* You can visualize the results by right-clicking on _evaluate model_ and selecting _Evaluation Results_ -> _Visualize_
+
+![visualize](https://user-images.githubusercontent.com/55206834/86662039-5343dc80-bfba-11ea-987b-0c68082056d4.png)
+
+## **Analyze results**
+
+You can now compare the results you achieved in this tutorial to the results of your NLP Individual Assignment.  
+Feel free to play around with the tutorial and change your data pre-processing or the model you used or it’s parameters.
+Team Bathurst found we achieved similar results to the NLP IND assignment question #2 using this tutorial in far less time than it took to build our code submission. 
 
 
 **Other reference material:**
@@ -174,3 +265,6 @@ There is a _Select Columns in Dataset_ module available to assist us with this.
 (2) For another tutorial example, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/tutorial-part1-credit-risk
 (3) To learn more about preprocessing data in Azure ML studio, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/preprocess-text?redirectedfrom=MSDN
 (4) To learn more about the hashing function, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/feature-hashing?redirectedfrom=MSDN
+(5) To learn more about how to split data in Azure ML, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/split-data?redirectedfrom=MSDN
+(6) To learn more about training models, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/train-model?redirectedfrom=MSDN
+
