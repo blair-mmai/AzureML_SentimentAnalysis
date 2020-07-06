@@ -75,13 +75,14 @@ We are now ready to set up our Architecture. At the end of the tutorial, your Ar
 
 ![New](https://user-images.githubusercontent.com/55206834/86652133-21c71300-bfb2-11ea-8685-e0b2c743a750.png)
 
-
 * At this point, you can either choose a Blank Experiment or Experiment template (if you want to start from an existing template)
 * For the purposes of this tutorial, click _Blank Experiment_
 
-
+![Blank Experiment](https://user-images.githubusercontent.com/55206834/86652060-11169d00-bfb2-11ea-96ab-632889a31b28.png)
 
 * You will see this blank architecture on the screen guiding you in how to set up your experiment architecture:
+
+
 
 Now it is time to start adding the modules to your experiment canvas.
 
