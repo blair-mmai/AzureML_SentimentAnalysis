@@ -44,6 +44,7 @@ You should now be at this screen:
 
 * Select _DATASET_
 
+![Dataset](https://user-images.githubusercontent.com/55206834/86649527-d7449700-bfaf-11ea-80a6-d768a5475156.png)
 
 * Select _FROM LOCAL FILE_
 
