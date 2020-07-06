@@ -94,3 +94,9 @@ There are several business use cases for Text Analytics API services, such as:
 
 Azure ML studio has pre-defined experiments so that even with little to no programming experience, you can run an ML experiment. Ready to give it a try? Follow the step by step tutorial on our Tutorial page.
 
+References used:
+(1) https://www.zdnet.com/article/the-top-cloud-providers-of-2020-aws-microsoft-azure-google-cloud-hybrid-saas/ 
+(2) https://www.parkmycloud.com/blog/aws-vs-azure-vs-google-cloud-market-share/ 
+(3) https://www.youtube.com/watch?v=KXkBZCe699A 
+(4) https://medium.com/kontikilabs/comparing-machine-learning-ml-services-from-various-cloud-ml-service-providers-63c8a2626cb6 
+
