@@ -30,21 +30,20 @@ Given Bathurst Inc. is trying to understand it's customer's sentiment in our tut
 
 ## **Azure Machine Learning Studio**
 
-Microsoft Azure Machine Learning (ML) Studio is a collaborative, drag-and-drop tool that exists in the Azure PaaS world. you can use ML Studio to build, test, and deploy predictive analytics solutions on your data. Azure ML Studio publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel. 
+Microsoft Azure Machine Learning (ML) Studio is a collaborative, drag-and-drop tool that exists in the Azure PaaS world. you can use ML Studio to build, test, and deploy predictive analytics solutions on your data. Azure ML Studio publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel (6). 
 
-There are several benefits of using Azure ML Studio (6): 
+There are several benefits of using Azure ML Studio (7): 
 1. It is easy to quickly learn and use with drag-and-drop capabilities
 2. Standard experiments allow for a starting point and allow users to get quick results
 3. It is a fully managed service   
  
 ## **Pricing**
 
-Pricing is offered under two main tiers for the Azure ML studio.
+Pricing is offered under two main tiers (8) for the Azure ML studio.
  
 ![Figure 4 Azure ML Studio Pricing](https://user-images.githubusercontent.com/55206834/86628112-685b4400-bf97-11ea-9ea2-26d257612fac.png)
 
 Figure 4 Azure ML Studio Pricing
-
 
 In addition to the tiered pricing for access to the ML studio, compute power and space are charged on an hourly or reserved basis. The cost for state-of-the-art computing power capable of running deep neural networks through multiple concurrent users may cost as high as $138,000 annually (see Figure 4), however, in most instances, costs may be less than the cost of purchasing an on-premise server. This pricing information can be applied to real-world solutions using the easily accessible cost calculator available online.
 
@@ -52,9 +51,9 @@ In addition to the tiered pricing for access to the ML studio, compute power and
 
 Figure 5 Virtual Machines Estimated Costs
 
-
 Finally, API costs for using Azure PaaS should also be considered depending on the use case . Generally Speaking, costs for API usage scale up with the number of transactions and compute hours required.
 
+![Figure 6 Azure API Costs](https://user-images.githubusercontent.com/55206834/86641866-73b76b00-bfa9-11ea-914a-71c0c18b5b70.png)
 
 Figure 6 Azure API Costs
  
@@ -93,6 +92,9 @@ References used:
 (3) https://www.slideshare.net/ivoandreev/azure-machine-learning-and-ml-on-premises
 (4) https://www.youtube.com/watch?v=KXkBZCe699A 
 (5) https://medium.com/kontikilabs/comparing-machine-learning-ml-services-from-various-cloud-ml-service-providers-63c8a2626cb6 
-(6) https://www.codit.eu/blog/azure-machine-learning-studio-vs-services/?country_sel=be
+(6) https://docs.microsoft.com/en-us/azure/machine-learning/studio/what-is-ml-studio#:~:text=Microsoft%20Azure%20Machine%20Learning%20Studio,BI%20tools%20such%20as%20Excel
+(7) https://www.codit.eu/blog/azure-machine-learning-studio-vs-services/?country_sel=be
+(8) https://azure.microsoft.com/en-us/pricing/details/machine-learning-studio/
+(9)
 
 
