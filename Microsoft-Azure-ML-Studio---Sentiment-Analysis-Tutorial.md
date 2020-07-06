@@ -96,8 +96,14 @@ Now it is time to start adding the modules to your experiment canvas.
 ### **Step 3c – Pre-process your data**
 
 * In the search box, enter “_preprocess_”, and you see _Preprocess Text_ Module under Text Analytics
+
+![Preprocess](https://user-images.githubusercontent.com/55206834/86653366-217b4780-bfb3-11ea-9a86-cf4c50eb4f07.png)
+
 * Drag and Drop _Preprocess Text_ to your canvas
 * **Connect** the dataset to Preprocess Text module (left connector)
+
+
+
 * Set properties:
 * > click on the _Preprocess Text_ module, and then _Launch column selector_ from the right-hand column
 * > Here you will see all the available pre-processing options to select from
