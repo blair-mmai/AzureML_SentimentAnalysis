@@ -39,8 +39,15 @@ You should now be at this screen:
 
 ### **Step 2 – Load your Dataset** (2)
 * Click the _+NEW_ in the bottom left of the workspace window
+
+![New](https://user-images.githubusercontent.com/55206834/86649646-f0e5de80-bfaf-11ea-8ed6-0a8636ed4353.png)
+
 * Select _DATASET_
+
+
 * Select _FROM LOCAL FILE_
+
+
 * Navigate to the _Bathurst_Tutorial_sentiment.csv_ file you downloaded in the pre-conditions
 * Click the _checkbox_
 
