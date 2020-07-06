@@ -158,12 +158,15 @@ There is a _Select Columns in Dataset_ module available to assist us with this.
 ![search select cols](https://user-images.githubusercontent.com/55206834/86657043-eb8b9280-bfb5-11ea-9b0b-ca652e13a881.png)
 
 * Drag and Drop _Select Columns in Dataset_ to your canvas
-* Connect the _Feature Hashing_ module to * Select Columns in Dataset
+* Connect the _Feature Hashing_ module to _Select Columns in Dataset_
 
 ![connect](https://user-images.githubusercontent.com/55206834/86656720-ac5d4180-bfb5-11ea-8b21-2ea50e85c0d3.png)
 
 * Set properties by clicking on the module, and then clicking on _Launch column selector_
+* Select the required columns for ML to use ( In our case study, we **exclude** the columns “_Sentence_” and “_Preprocessed Sentence_”)
+* > Select all hashed columns (do this by **Beginning with all columns** and **excluding** the _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
 
+![begin with all cols](https://user-images.githubusercontent.com/55206834/86657670-6b196180-bfb6-11ea-8b58-9ab3cc23025f.png)
 
 
 **Other reference material:**
