@@ -110,7 +110,7 @@ Now it is time to start adding the modules to your experiment canvas.
 * > Select the type of preprocessing you would like to do from the right-hand side of the screen
 * > For the purposes of this tutorial, we accepted all the **default cleaning** as shown below:
 
-
+![Properties](https://user-images.githubusercontent.com/55206834/86653645-57203080-bfb3-11ea-8d8e-c1c8e8777488.png)
 
 
 
