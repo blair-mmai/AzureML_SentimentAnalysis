@@ -93,7 +93,7 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ![Drag and Drop](https://user-images.githubusercontent.com/55206834/86652096-196ed800-bfb2-11ea-8b02-297c7269c1c8.png)
 
-### **Step 3c – Pre-process your data**
+### **Step 3c – Pre-process your data** (3)
 
 * In the search box, enter “_preprocess_”, and you see _Preprocess Text_ Module under Text Analytics
 
@@ -102,7 +102,7 @@ Now it is time to start adding the modules to your experiment canvas.
 * Drag and Drop _Preprocess Text_ to your canvas
 * **Connect** the dataset to Preprocess Text module (left connector)
 
-
+![Connect](https://user-images.githubusercontent.com/55206834/86653572-4a9bd800-bfb3-11ea-86a8-8e48f9833291.png)
 
 * Set properties:
 * > click on the _Preprocess Text_ module, and then _Launch column selector_ from the right-hand column
@@ -112,8 +112,16 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ![Properties](https://user-images.githubusercontent.com/55206834/86653645-57203080-bfb3-11ea-8d8e-c1c8e8777488.png)
 
+* > Click _Launch Column selector_
+* > Select the _Sentence_ field to be pre-processed
+
+
+* Run the module by right-clicking on the module and selecting _Run Selected_ from the menu 
+* You will know it completed properly by the green checkmark that shows up
 
 
 **Other reference material:**
 (1) for more information on setting up your workspace, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-workspace
 (2) For another tutorial example, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/tutorial-part1-credit-risk
+(3) To learn more about preprocessing data in Azure ML studio, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/preprocess-text?redirectedfrom=MSDN
+
