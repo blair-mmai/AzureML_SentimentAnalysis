@@ -32,33 +32,14 @@ Given Bathurst Inc. is trying to understand it's customer's sentiment in our tut
 
 Microsoft Azure Machine Learning (ML) Studio is a collaborative, drag-and-drop tool that exists in the Azure PaaS world. you can use ML Studio to build, test, and deploy predictive analytics solutions on your data. Azure ML Studio publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel. 
 
-There are several benefits of using Azure ML Studio: 
-1. Ease of application management
-> Organizations can manage all their applications that are on the Azure platform from the same easy to use interface
-2. Flexibility to pay for use or pay as you go
-> Organizations can pay only for what they need and scale when and if they need them without incurring significant up-front infrastructure costs
-3. Agility to move quickly
-> By managing their platform through the Azure interface and scaling when needed, organizations can innovate and more quickly scale their applications
-4. Compliance to privacy standards
-> By leveraging a platform as a service, organizations can take advantage of privacy standards that are part of the service, making it especially easy for sectors like finance and legal
-5. Reliability in storing and sharing data
-> The Azure platform has several data centers and delivery points making storage and sharing reliable and faster
-6. Higher Security
-> By leveraging a platform as a service, organizations can take advantage of security features that are embedded in the platform (like two-tier authentication and biometric readers) making solutions more secure
-7. Built-in analytics support
-> Azure has built-in analytics support
-8. End to end delivery plan
-> Azure has built-in source control, unit testing, delivery and go live tools
-9. Disaster recovery
-> Azure has built-in recovery capabilities including failover
-10. Deployed anywhere
-> Azure accepts a hybrid model and allows organizations to select their data storage making transition easy
-11. Automatic updates
-> Software updates are automated and real-time
+There are several benefits of using Azure ML Studio (6): 
+1. It is easy to quickly learn and use with drag-and-drop capabilities
+2. Standard experiments allow for a starting point and allow users to get quick results
+3. It is a fully managed service   
  
 ## **Pricing**
 
-Pricing is offered under two main tiers  for the Azure ML studio.
+Pricing is offered under two main tiers for the Azure ML studio.
  
 ![Figure 4 Azure ML Studio Pricing](https://user-images.githubusercontent.com/55206834/86628112-685b4400-bf97-11ea-9ea2-26d257612fac.png)
 
@@ -112,5 +93,6 @@ References used:
 (3) https://www.slideshare.net/ivoandreev/azure-machine-learning-and-ml-on-premises
 (4) https://www.youtube.com/watch?v=KXkBZCe699A 
 (5) https://medium.com/kontikilabs/comparing-machine-learning-ml-services-from-various-cloud-ml-service-providers-63c8a2626cb6 
+(6) https://www.codit.eu/blog/azure-machine-learning-studio-vs-services/?country_sel=be
 
 
