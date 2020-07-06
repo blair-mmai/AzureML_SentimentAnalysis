@@ -59,6 +59,9 @@ You should now be at this screen:
 
 Your screen should now look like this:
 
+![Final screen - Step 2](https://user-images.githubusercontent.com/55206834/86649703-fcd1a080-bfaf-11ea-9375-87f612ae98f5.png)
+
+
 **Other reference material:**
 (1) for more information on setting up your workspace, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-workspace
 (2) For another tutorial example, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/tutorial-part1-credit-risk
