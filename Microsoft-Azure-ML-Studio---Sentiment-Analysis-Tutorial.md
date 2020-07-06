@@ -243,7 +243,7 @@ The model training is now complete.
 ![evaluate](https://user-images.githubusercontent.com/55206834/86661782-0e1faa80-bfba-11ea-96af-b42585fbfc96.png)
 
 * Connect the output node of _Train Model_ to the left input node of _Score Model_
-* Connect _Data Split_ (right output node) to right input node of _Score Model_
+* Connect _Data Split_ (right output node) to the right input node of _Score Model_
 * Connect _Score Model_ to _Evaluate Model_
 
 ![connect](https://user-images.githubusercontent.com/55206834/86661600-df093900-bfb9-11ea-815a-90d1a2711b88.png)
@@ -312,7 +312,7 @@ As a member of the Data Science team at Bathurst Inc., you have been tasked to c
 * Providing the customer experience team with “strong positive” tweets so they can generate an outbound marketing campaign to get promoters to provide online recommendations and strengthen your online presence
 * Providing the customer retention team with “strong negative” tweets so they can address the issues with the customers and turn detractors into (at worst) neutral, (at best) promoters of the company
 
-Now that you have a sentiment analysis experiment, you can easily extend it for use as an API in a custom built script for free (for up to 1,000 transactions) to test if this is valuable by:
+Now that you have a sentiment analysis experiment, you can easily extend it for use as an API in a custom-built script for free (for up to 1,000 transactions) to test if this is valuable by:
 * Scraping tweets and classifying them as positive or negative
 * Generating some reports on that data for your customer experience team
 
