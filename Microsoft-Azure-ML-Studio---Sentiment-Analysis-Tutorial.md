@@ -27,7 +27,7 @@ If you do not have an Azure account, please go here for steps to create your acc
 
 Now that you have Azure access and the file you want to use downloaded; we are ready to begin the tutorial.
 
-### **Step 1 – Select your workspace**
+### **Step 1 – Select your workspace** (1)
 * Navigate to [https://studio.azureml.net/](https://studio.azureml.net/) and log on to Azure studio 
 * Once logged in, select your workspace from the top right-hand menu
 
@@ -35,5 +35,18 @@ Now that you have Azure access and the file you want to use downloaded; we are r
 
 You should now be at this screen:
 
+![Workspace View](https://user-images.githubusercontent.com/55206834/86646031-e7a74280-bfac-11ea-9b6d-1d40106c95af.png)
 
+### **Step 2 – Load your Dataset** (2)
+* Click the _+NEW_ in the bottom left of the workspace window
+* Select _DATASET_
+* Select _FROM LOCAL FILE_
+* Navigate to the _Bathurst_Tutorial_sentiment.csv_ file you downloaded in the pre-conditions
+* Click the _checkbox_
+* You now have your dataset loaded and ready to use
 
+Your screen should now look like this:
+
+**Other reference material:**
+(1) for more information on setting up your workspace, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-workspace
+(2) For another tutorial example, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/tutorial-part1-credit-risk
