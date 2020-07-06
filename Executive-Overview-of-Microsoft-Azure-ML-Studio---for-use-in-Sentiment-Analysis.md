@@ -11,16 +11,20 @@ The PaaS space is led by 3 companies. Amazon with a market leading AWS offering,
 PaaS through Azure as a common platform simplifies training and integration across organizations in a cost-effective way. Azure and other PaaS Services are typically paid for by usage therefore allowing rapid scaling  in a manner that is cost effective. 
 Looking specifically at Text Analytics capabilities, the table below does a good job of summarizing the capabilities you will find across the platforms :
  
+
 Figure 1 Comparison of NLP Services
-Azure Machine Learning Studio
-Microsoft Azure Machine Learning (ML) Studio is a collaborative, drag-and-drop tool that exists in the Azure PaaS world. you can use ML Studio to build, test, and deploy predictive analytics solutions on your data. Azure ML Studio publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel . 
+
+**## Azure Machine Learning Studio**
+
+Microsoft Azure Machine Learning (ML) Studio is a collaborative, drag-and-drop tool that exists in the Azure PaaS world. you can use ML Studio to build, test, and deploy predictive analytics solutions on your data. Azure ML Studio publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel. 
+
 There are several benefits of using Azure ML Studio: 
-1.	Ease of application management
-•	Organizations can manage all their applications that are on the Azure platform from the same easy to use interface
-2.	Flexibility to pay for use or pay as you go
-•	Organizations can pay only for what they need and scale when and if they need them without incurring significant up-front infrastructure costs
-3.	Agility to move quickly
-•	By managing their platform through the Azure interface and scaling when needed, organizations can innovate and more quickly scale their applications
+1. Ease of application management
+> Organizations can manage all their applications that are on the Azure platform from the same easy to use interface
+2. Flexibility to pay for use or pay as you go
+> Organizations can pay only for what they need and scale when and if they need them without incurring significant up-front infrastructure costs
+3. Agility to move quickly
+> By managing their platform through the Azure interface and scaling when needed, organizations can innovate and more quickly scale their applications
 4.	Compliance to privacy standards
 •	By leveraging a platform as a service, organizations can take advantage of privacy standards that are part of the service, making it especially easy for sectors like finance and legal
 5.	Reliability in storing and sharing data
