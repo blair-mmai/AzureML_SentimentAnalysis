@@ -48,7 +48,7 @@ Figure 4 Azure ML Studio Pricing
 
 In addition to the tiered pricing for access to the ML studio, compute power and space are charged on an hourly or reserved basis. The cost for state-of-the-art computing power capable of running deep neural networks through multiple concurrent users may cost as high as $138,000 annually (see Figure 4), however, in most instances, costs may be less than the cost of purchasing an on-premise server. This pricing information can be applied to real-world solutions using the easily accessible cost calculator available online.
 
-
+![Figure 5 Virtual Machines Estimated Costs](https://user-images.githubusercontent.com/55206834/86641606-44086300-bfa9-11ea-8a45-2ce7a3fce9ae.png)
 
 Figure 5 Virtual Machines Estimated Costs
 
