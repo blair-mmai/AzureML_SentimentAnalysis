@@ -82,7 +82,7 @@ We are now ready to set up our Architecture. At the end of the tutorial, your Ar
 
 * You will see this blank architecture on the screen guiding you in how to set up your experiment architecture:
 
-
+![blank architecture](https://user-images.githubusercontent.com/55206834/86652022-0825cb80-bfb2-11ea-8484-dcef42316fbf.png)
 
 Now it is time to start adding the modules to your experiment canvas.
 
