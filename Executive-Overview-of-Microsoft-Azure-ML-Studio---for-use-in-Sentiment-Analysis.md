@@ -14,6 +14,7 @@ The PaaS space is led by 3 companies. Amazon with a market-leading AWS offering,
 
 Figure 1 Main ML Market Players Comparison
 
+![Figure 2 PaaS Pricing](https://user-images.githubusercontent.com/55206834/86639783-82048780-bfa7-11ea-97f9-9f9e05126edb.png)
 
 Figure 2 Pricing for Market Players
 
@@ -21,9 +22,9 @@ PaaS through Azure as a common platform simplifies training and integration acro
 
 Looking specifically at Text Analytics capabilities, the table below does a good job of summarizing the capabilities you will find across the various PaaS platforms (5):
  
-![Figure 2 Comparison of NLP Services](https://user-images.githubusercontent.com/55206834/86625341-f254de00-bf92-11ea-81a8-f0297571805d.png)
+![Figure 3 Comparison of NLP Services](https://user-images.githubusercontent.com/55206834/86625341-f254de00-bf92-11ea-81a8-f0297571805d.png)
 
-Figure 2 Comparison of NLP Services
+Figure 3 Comparison of NLP Services
 
 Given Bathurst Inc. is trying to understand it's customer's sentiment in our tutorial example, we explore Azure specifically for Sentiment Analysis below as our platform of choice. 
 
@@ -59,22 +60,22 @@ There are several benefits of using Azure ML Studio:
 
 Pricing is offered under two main tiers  for the Azure ML studio.
  
-![Figure 3 Azure ML Studio Pricing](https://user-images.githubusercontent.com/55206834/86628112-685b4400-bf97-11ea-9ea2-26d257612fac.png)
+![Figure 4 Azure ML Studio Pricing](https://user-images.githubusercontent.com/55206834/86628112-685b4400-bf97-11ea-9ea2-26d257612fac.png)
 
-Figure 3 Azure ML Studio Pricing
-
-
-In addition to the tiered pricing for access to the ML studio, compute power and space are charged on an hourly or reserved basis. The cost for state-of-the-art computing power capable of running deep neural networks through multiple concurrent users may cost as high as $138,000 annually (see Figure 2), however in most instances, costs may be less than the cost of purchasing an on-premise server. This pricing information can be applied to real-world solutions using the easily accessible cost calculator available online.
+Figure 4 Azure ML Studio Pricing
 
 
+In addition to the tiered pricing for access to the ML studio, compute power and space are charged on an hourly or reserved basis. The cost for state-of-the-art computing power capable of running deep neural networks through multiple concurrent users may cost as high as $138,000 annually (see Figure 4), however, in most instances, costs may be less than the cost of purchasing an on-premise server. This pricing information can be applied to real-world solutions using the easily accessible cost calculator available online.
 
-Figure 3 Virtual Machines Estimated Costs
+
+
+Figure 5 Virtual Machines Estimated Costs
 
 
 Finally, API costs for using Azure PaaS should also be considered depending on the use case . Generally Speaking, costs for API usage scale up with the number of transactions and compute hours required.
 
 
-Figure 4 Azure API Costs
+Figure 6 Azure API Costs
  
 ## **Using ML Studio & Text Analytics API**
 
