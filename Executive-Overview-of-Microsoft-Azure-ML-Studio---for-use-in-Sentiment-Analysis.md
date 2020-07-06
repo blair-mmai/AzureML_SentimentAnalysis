@@ -10,6 +10,10 @@ PaaS is a category of cloud computing services that provides a platform (a mediu
 
 The PaaS space is led by 3 companies. Amazon with a market-leading AWS offering, Microsoft with Azure as the second-largest (1) PaaS at 17.6% (2) of the market in February of 2020, and Google with a 3rd place cloud offering at roughly 10% market share. All three of these market leaders offer value as a PaaS, however, our focus will be on the Azure platform developed by Microsoft for this tutorial.
 
+
+
+Figure 1 Main ML Market Players Comparison
+
 PaaS through Azure as a common platform simplifies training and integration across organizations in a cost-effective way. Azure and other PaaS Services are typically paid for by usage, therefore, allowing rapid scaling (3) in a manner that is cost-effective. 
 
 Looking specifically at Text Analytics capabilities, the table below does a good job of summarizing the capabilities you will find across the various PaaS platforms (4):
@@ -103,4 +107,6 @@ References used:
 (2) https://www.parkmycloud.com/blog/aws-vs-azure-vs-google-cloud-market-share/ 
 (3) https://www.youtube.com/watch?v=KXkBZCe699A 
 (4) https://medium.com/kontikilabs/comparing-machine-learning-ml-services-from-various-cloud-ml-service-providers-63c8a2626cb6 
+
+(X) https://www.slideshare.net/ivoandreev/azure-machine-learning-and-ml-on-premises
 
