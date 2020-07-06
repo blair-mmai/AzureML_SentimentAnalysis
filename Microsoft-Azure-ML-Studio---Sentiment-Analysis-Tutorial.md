@@ -47,6 +47,7 @@ You should now be at this screen:
 
 * Select _FROM LOCAL FILE_
 
+![From local file](https://user-images.githubusercontent.com/55206834/86649592-e62b4980-bfaf-11ea-80be-0f3bde1a6add.png)
 
 * Navigate to the _Bathurst_Tutorial_sentiment.csv_ file you downloaded in the pre-conditions
 * Click the _checkbox_
