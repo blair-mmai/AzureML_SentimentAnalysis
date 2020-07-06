@@ -11,6 +11,7 @@ The PaaS space is led by 3 companies. Amazon with a market leading AWS offering,
 PaaS through Azure as a common platform simplifies training and integration across organizations in a cost-effective way. Azure and other PaaS Services are typically paid for by usage therefore allowing rapid scaling  in a manner that is cost effective. 
 Looking specifically at Text Analytics capabilities, the table below does a good job of summarizing the capabilities you will find across the platforms :
  
+![Figure 1 Comparison of NLP Services](https://user-images.githubusercontent.com/55206834/86625341-f254de00-bf92-11ea-81a8-f0297571805d.png)
 
 Figure 1 Comparison of NLP Services
 
