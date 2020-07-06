@@ -1,8 +1,9 @@
 Welcome to the AzureMLTutorial_SentimentAnalysis wiki! Below you will find an Executive Overview of 
 
-**Executive Overview**
+# **Executive Overview**
 
-**## What is a PaaS?**
+## **What is a PaaS?**
+
 Platform as a service (PaaS) is a category of cloud computing services that provides a platform (a medium to use) for customers to develop, run, and manage applications with simplicity. PaaS is especially powerful for developing and launching Apps without requiring the complexity of building and maintaining the infrastructure that is typically required.
 
 The PaaS space is led by 3 companies. Amazon with a market leading AWS offering, Microsoft with Azure as the second largest  PaaS at a 17.6%  of the market in February of 2020, and Google with a 3rd place cloud offering at roughly 10% market share. All three of these market leaders offer value as a PaaS, however our focus will be on the Azure platform developed by Microsoft for this tutorial.
