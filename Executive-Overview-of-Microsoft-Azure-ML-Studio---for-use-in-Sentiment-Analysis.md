@@ -45,13 +45,13 @@ Pricing is offered under two main tiers (8) for the Azure ML studio.
 
 Figure 4 Azure ML Studio Pricing
 
-In addition to the tiered pricing for access to the ML studio, compute power and space are charged on an hourly or reserved basis. The cost for state-of-the-art computing power capable of running deep neural networks through multiple concurrent users may cost as high as $138,000 annually (see Figure 4), however, in most instances, costs may be less than the cost of purchasing an on-premise server. This pricing information can be applied to real-world solutions using the easily accessible cost calculator available online.
+In addition to the tiered pricing for access to the ML studio, compute power and space are charged on an hourly or reserved basis. The cost for state-of-the-art computing power capable of running deep neural networks through multiple concurrent users may cost as high as $138,000 annually (see Figure 5), however, in most instances, costs may be less than the cost of purchasing an on-premise server. This pricing (9) information can be applied to real-world solutions using the easily accessible cost calculator available online.
 
 ![Figure 5 Virtual Machines Estimated Costs](https://user-images.githubusercontent.com/55206834/86641606-44086300-bfa9-11ea-8a45-2ce7a3fce9ae.png)
 
 Figure 5 Virtual Machines Estimated Costs
 
-Finally, API costs for using Azure PaaS should also be considered depending on the use case . Generally Speaking, costs for API usage scale up with the number of transactions and compute hours required.
+Finally, API costs for using Azure PaaS should also be considered depending on the use case (10). Generally speaking, costs for API usage scale up with the number of transactions and compute hours required.
 
 ![Figure 6 Azure API Costs](https://user-images.githubusercontent.com/55206834/86641866-73b76b00-bfa9-11ea-914a-71c0c18b5b70.png)
 
@@ -59,18 +59,18 @@ Figure 6 Azure API Costs
  
 ## **Using ML Studio & Text Analytics API**
 
-The Text Analytics API can be used for four (4) types of Analysis, however, our focus for this tutorial will be on Sentiment Analysis.
+The Text Analytics API can be used for four (4) types of Analysis (11), however, our focus for this tutorial will be on Sentiment Analysis.
 
-1. Sentiment Analysis  
+1. Sentiment Analysis (12)  
 > the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information
-2. Key Phrase Extraction 
+2. Key Phrase Extraction (13)
 > Keyword extraction is tasked with the automatic identification of terms that best describe the subject of a document. Key phrases, key terms, key segments or just keywords are the terminology which is used for defining the terms that represent the most relevant information contained in the document
-3. Language Detection 
+3. Language Detection (14)
 > In natural language processing, language identification or language guessing is the problem of determining which natural language given content is in. Computational approaches to this problem view it as a special case of text categorization, solved with various statistical methods
-4. Named Entity Recognition 
+4. Named Entity Recognition (15) 
 > Named-entity recognition is a subtask of information extraction that seeks to locate and classify named entities mentioned in unstructured text into pre-defined categories such as person names, organizations, locations, medical codes, time expressions, quantities, monetary values, percentages, etc.
 
-There are several business use cases for Text Analytics API services, such as: 
+There are several business use cases for Text Analytics API services, such as (16): 
 
 * Identifying customer insights to predict or prevent things like churn:
 > Analyzing customer satisfaction survey results 
@@ -95,6 +95,12 @@ References used:
 (6) https://docs.microsoft.com/en-us/azure/machine-learning/studio/what-is-ml-studio#:~:text=Microsoft%20Azure%20Machine%20Learning%20Studio,BI%20tools%20such%20as%20Excel
 (7) https://www.codit.eu/blog/azure-machine-learning-studio-vs-services/?country_sel=be
 (8) https://azure.microsoft.com/en-us/pricing/details/machine-learning-studio/
-(9)
-
+(9) https://azure.microsoft.com/en-us/pricing/calculator/
+(10) https://www.google.com/search?q=azure+api+cost&rlz=1C1CHBF_enCA862CA862&oq=azure+api+cost&aqs=chrome..69i57.3521j0j4&sourceid=chrome&ie=UTF-8
+(11) https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview
+(12) https://en.wikipedia.org/wiki/Sentiment_analysis
+(13) https://en.wikipedia.org/wiki/Keyword_extraction
+(14) https://en.wikipedia.org/wiki/Language_identification
+(15) https://en.wikipedia.org/wiki/Named-entity_recognition
+(16) https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/text-analytics-user-scenarios
 
