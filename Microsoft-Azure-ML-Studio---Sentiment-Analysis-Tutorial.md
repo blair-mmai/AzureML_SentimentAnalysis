@@ -91,6 +91,21 @@ Now it is time to start adding the modules to your experiment canvas.
 * Locate your dataset in My Datasets on the left-hand menu under My Datasets
 * Drag & Drop the Dataset to the right-hand side where your architecture canvas is
 
+![Drag and Drop](https://user-images.githubusercontent.com/55206834/86652096-196ed800-bfb2-11ea-8b02-297c7269c1c8.png)
+
+### **Step 3c – Pre-process your data**
+
+* In the search box, enter “_preprocess_”, and you see _Preprocess Text_ Module under Text Analytics
+* Drag and Drop _Preprocess Text_ to your canvas
+* **Connect** the dataset to Preprocess Text module (left connector)
+* Set properties:
+* > click on the _Preprocess Text_ module, and then _Launch column selector_ from the right-hand column
+* > Here you will see all the available pre-processing options to select from
+* > Select the type of preprocessing you would like to do from the right-hand side of the screen
+* > For the purposes of this tutorial, we accepted all the **default cleaning** as shown below:
+
+
+
 
 
 **Other reference material:**
