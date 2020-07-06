@@ -48,6 +48,7 @@ There are several benefits of using Azure ML Studio:
 
 Pricing is offered under two main tiers  for the Azure ML studio.
  
+![Figure 2 Azure ML Studio Pricing](https://user-images.githubusercontent.com/55206834/86628112-685b4400-bf97-11ea-9ea2-26d257612fac.png)
 
 Figure 2 Azure ML Studio Pricing
 
