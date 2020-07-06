@@ -267,7 +267,7 @@ When you are satisfied with your model, it is time to deploy it to production.
 
 * Click >>> _SET UP WEB SERVICE_ and then _Update predictive experiment_
 
-![setup web service](https://user-images.githubusercontent.com/55206834/86663497-c8fc7800-bfbb-11ea-9609-53ff2b61fa15.pn)
+![setup web service](https://user-images.githubusercontent.com/55206834/86663497-c8fc7800-bfbb-11ea-9609-53ff2b61fa15.png)
 
 ![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png) At this point, if you don’t see the _SET UP WEB SERVICE_ option, you may not have run your full experiment, please go back and do so now and try again.
 
