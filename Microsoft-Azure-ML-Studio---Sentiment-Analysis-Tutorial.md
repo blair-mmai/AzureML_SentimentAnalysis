@@ -76,7 +76,7 @@ We are now ready to set up our Architecture. At the end of the tutorial, your Ar
 
 ### **Step 3a – Create an Experiment**
 
-* Click _EXPERIMENT_
+* Click _EXPERIMENTS_
 * Click the _+NEW_ in the bottom left of the workspace window
 
 ![New](https://user-images.githubusercontent.com/55206834/86652133-21c71300-bfb2-11ea-8685-e0b2c743a750.png)
@@ -94,6 +94,8 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ### **Step 3b – Load Your Data**
 
+* Click on _Saved Datasets_
+* Click on _My Datasets_
 * Locate your dataset in My Datasets on the left-hand menu under My Datasets
 * Drag & Drop the Dataset to the right-hand side where your architecture canvas is
 
@@ -101,11 +103,15 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ### **Step 3c – Pre-process your data** (3)
 
-* In the search box, enter “_preprocess_”, and you see _Preprocess Text_ Module under Text Analytics
+* In the search box _Search Experiment Items_ type in “_preprocess_”, 
+
+![search](https://user-images.githubusercontent.com/55206834/86696966-f22d0080-bfdb-11ea-9878-e152865914d6.png)
+
+* You will see _Preprocess Text_ Module under Text Analytics
 
 ![Preprocess](https://user-images.githubusercontent.com/55206834/86653366-217b4780-bfb3-11ea-9a86-cf4c50eb4f07.png)
 
-* Drag and Drop _Preprocess Text_ to your canvas
+* Drag and Drop _Preprocess Text_ to your canvas **below** your dataset box
 * **Connect** the dataset to Preprocess Text module (left connector)
 
 ![Connect](https://user-images.githubusercontent.com/55206834/86653572-4a9bd800-bfb3-11ea-86a8-8e48f9833291.png)
@@ -119,9 +125,18 @@ Now it is time to start adding the modules to your experiment canvas.
 ![Properties](https://user-images.githubusercontent.com/55206834/86653645-57203080-bfb3-11ea-8d8e-c1c8e8777488.png)
 
 * > Click _Launch Column selector_
-* > Select the _Sentence_ field to be pre-processed
 
-![Sentence](https://user-images.githubusercontent.com/55206834/86654338-df9ed100-bfb3-11ea-9179-f4d6c59f519f.png)
+![launch column selector](https://user-images.githubusercontent.com/55206834/86697725-a7f84f00-bfdc-11ea-8efc-c5101ada4a56.png)
+
+* > Click _By Name_ on the left-hand side
+* > Select only the _Sentence_ field and move it to the right-hand side under _SELECTED COLUMNS_ using the arrow in the center indicating you want to be pre-processed 
+
+![sentence pre click](https://user-images.githubusercontent.com/55206834/86699391-22759e80-bfde-11ea-858f-2a8654204a1c.png)
+
+Note: all other fields should be on the left-hand side under _AVAILABLE COLUMNS_
+* Click on the _checkmark_
+
+![sentence](https://user-images.githubusercontent.com/55206834/86699781-85673580-bfde-11ea-9882-61bc3aec6390.png)
 
 * Run the module by right-clicking on the module and selecting _Run Selected_ from the menu 
 * You will know it completed properly by the green checkmark that shows up
