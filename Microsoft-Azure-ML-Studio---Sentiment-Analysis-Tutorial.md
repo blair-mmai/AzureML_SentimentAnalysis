@@ -338,12 +338,12 @@ You will now see a second tab with your Predictive experiment.
 * Connect the _Select Columns in Dataset_ output node to the _Web service output_ top (input) node
 * Click on _Select Columns in Dataset_ module
 * Click on _Launch column selector_ 
-* Click on BY NAME on the right hand side
+* Click on BY NAME on the right-hand side
 * Scroll all the way down to find **Scored Labels** and **Scored Probabilities** in the Available columns and select them both (click first, hold down shift and click the second)
 * Move them to the right hand Selected columns column by clicking the arrow in the middle
 * Click on the _checkmark_
 
-![scored labels](https://user-images.githubusercontent.com/55206834/86722018-886d2080-bff4-11ea-969c-e8898a02123a.png)
+![score labels](https://user-images.githubusercontent.com/55206834/86723026-848dce00-bff5-11ea-9234-f3e25e8bf8d5.png)
 
 * _Run_ again the Predictive experiment by selecting _Run_ from the bottom menu to get the following: 
 
@@ -353,7 +353,7 @@ The Web service can now be deployed
 
 * Click _DEPLOY WEB SERVICE_ 
 
-![deploy web service](https://user-images.githubusercontent.com/55206834/86663112-630ff080-bfbb-11ea-80bc-68ddabbc315a.png)
+![deploy](https://user-images.githubusercontent.com/55206834/86723390-d9c9df80-bff5-11ea-948b-07fbf382ce85.png)
 
 * Click _Deploy_ 
 
