@@ -99,7 +99,7 @@ Now it is time to start adding the modules to your experiment canvas.
 * Locate your dataset in My Datasets on the left-hand menu under My Datasets
 * Drag & Drop the Dataset to the right-hand side where your architecture canvas is
 
-![Drag and Drop](https://user-images.githubusercontent.com/55206834/86652096-196ed800-bfb2-11ea-8b02-297c7269c1c8.png)
+![Drag and Drop](https://user-images.githubusercontent.com/55206834/86700724-58675280-bfdf-11ea-912c-e499ab376e0f.png)
 
 ### **Step 3c – Pre-process your data** (3)
 
@@ -158,16 +158,18 @@ The next step is to extract features you want to use using feature hashing.
 ![hashing success](https://user-images.githubusercontent.com/55206834/86654885-4e7c2a00-bfb4-11ea-8fe7-743fc216ec5c.png)
 
 * _Launch column selector_ to select the features you want to include
-* For the purposes of this tutorial, Select _BEGIN WITH NO COLUMNS_ and select _Preprocessed Sentence_ 
+* Click on _BY NAME_ on the left-hand side
+* Select _Preprocessed Sentence_ and move it to the right-hand side under _SELECTED COLUMNS_ using the arrow in the center 
+* Click on the _checkmark_
 
-![begin with no columns](https://user-images.githubusercontent.com/55206834/86656100-36f17100-bfb5-11ea-9194-15519e89fd57.png)
+![select preprocessed sentence](https://user-images.githubusercontent.com/55206834/86701858-65387600-bfe0-11ea-833c-886b436e4b45.png)
 
 * Set the properties you want to use to vectorize the data
 * For the purposes of this tutorial, we have used hashing **bitsize** of _8_  with **n-grams** of _1_
 
 ![properties hash](https://user-images.githubusercontent.com/55206834/86655770-f98ce380-bfb4-11ea-9dde-c3a7905bea03.png)
 
-* _Run_ the module by right-clicking on it and selecting Run (remember to look for the green checkmark of a successful run before moving on)
+* _Run_ the module by right-clicking on it and selecting Run (remember to look for the green checkmark  on your module indicating a successful run before moving on)
 
 ### **Step 3e – Select the data to pass to your model**
 
