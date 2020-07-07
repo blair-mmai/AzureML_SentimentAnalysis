@@ -117,7 +117,7 @@ Now it is time to start adding the modules to your experiment canvas.
 ![Connect](https://user-images.githubusercontent.com/55206834/86653572-4a9bd800-bfb3-11ea-86a8-8e48f9833291.png)
 
 * Set properties:
-* > click on the _Preprocess Text_ module, and then _Launch column selector_ from the right-hand column
+* > click on the _Preprocess Text_ module, and look at the right-hand column
 * > Here you will see all the available pre-processing options to select from
 * > Select the type of preprocessing you would like to do from the right-hand side of the screen
 * > For the purposes of this tutorial, we accepted all the **default cleaning** as shown below:
