@@ -194,11 +194,11 @@ There is a _Select Columns in Dataset_ module available to assist us with this.
 
 ![begin with all cols](https://user-images.githubusercontent.com/55206834/86704054-81d5ad80-bfe2-11ea-8c85-1c3970abaaf8.png)
 
-You should now see all your hashed features selected like this:
+You should now see this above _Launch column selector_:
 
-![all cols property](https://user-images.githubusercontent.com/55206834/86658307-f3980200-bfb6-11ea-96f4-49d6285a7376.png)
+![hash select cols](https://user-images.githubusercontent.com/55206834/86705854-4936d380-bfe4-11ea-996a-7ad9170a6d5b.png)
 
-* _Run_ the module by right-clicking on it and selecting Run (remember to look for the green checkmark of a successful run before moving on)
+* _Run_ the module by right-clicking on it and selecting _Run selected_ (remember to look for the green checkmark of a successful run before moving on)
 
 ### **Step 3f – Split your data into training and testing data** (5)
 
@@ -214,11 +214,23 @@ We will use Azure’s built-in Split Data module.
 
 * Set properties by clicking on the module
 * Select a single column for the stratification. In our instance: _Polarity_
-* _Run_ the module
-* Click on the module to set the properties
-* > In our example we split the data into _80% training_ data and _20% testing_ data
+* > Click on _Launch column selector_
+* > Click on _BY NAME_
+* > Click on _Polarity_ in the left-hand column and move it to the right-hand column under _SELECTED COLUMNS_ using the arrow in the middle
 
-![properties](https://user-images.githubusercontent.com/55206834/86659829-2989b600-bfb8-11ea-8498-2cf6eedf2496.png)
+![stratified split](https://user-images.githubusercontent.com/55206834/86706426-ded26300-bfe4-11ea-8613-9b271b886100.png)
+
+* > Click on the _checkmark_
+
+* Set the remaining properties for your data split
+* > In our example we split the data into _80% training_ data and _20% testing_ data by setting the _Fraction of rows in the firs..._ to 0.8
+* > _Check the box_ for _Randomized split_
+* > Set your _Random seed_ = 42 so that your results are reproduceable
+* > Set _Stratified split_ to _True_
+
+![split properties](https://user-images.githubusercontent.com/55206834/86707403-e9d9c300-bfe5-11ea-909d-dac14bc8cde8.png)
+
+* _Run_ the module by right-clicking and selecting _Run selected_
 
 We now have our dataset ready for training. Let us begin!
 
@@ -231,7 +243,7 @@ We now have our dataset ready for training. Let us begin!
 
 ![DT](https://user-images.githubusercontent.com/55206834/86660902-2b07ae00-bfb9-11ea-8019-6d396794bff2.png)
 
-* In the search box, enter “_Train_” to select the Train Model
+* In the search box, enter “_Train_” to select the _Train Model_ module
 * Drag and Drop the _train model_ module to your canvas
 
 ![train](https://user-images.githubusercontent.com/55206834/86660726-fd226980-bfb8-11ea-9065-7c2c603715da.png)
