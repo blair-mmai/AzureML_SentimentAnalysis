@@ -22,7 +22,7 @@ Before starting this tutorial, you will need to:
 > To download the file from the link, click on Code and select Download Zip
 > Unzip the file and keep note of where you have it as you will need it's location later in the tutorial
 
-![download file](https://user-images.githubusercontent.com/55206834/86692985-4635e600-bfd8-11ea-9ca3-6644cf7cb74b.png)
+![download file](https://user-images.githubusercontent.com/55206834/86694747-e6403f00-bfd9-11ea-9069-397e50b29005.png)
 
 2. Ensure you have Microsoft Azure access – you should have this from MMAI 863.  Try your login [here](https://studio.azureml.net/)  
 
