@@ -40,10 +40,6 @@ Now that you have Azure access and the file you want to use downloaded; we are r
 
 You should now be at this screen:
 
-new image:
-<a href="url"><img src="https://user-images.githubusercontent.com/55206834/86852829-6e2e5380-c083-11ea-832b-2115a97f0099.png" height="250" width="1500" ></a>
-
-old image:
 ![Main Screen](https://user-images.githubusercontent.com/55206834/86852829-6e2e5380-c083-11ea-832b-2115a97f0099.png)
 
 ### **Step 2 – Load your Dataset** (2)
