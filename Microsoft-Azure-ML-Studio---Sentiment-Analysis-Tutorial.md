@@ -36,9 +36,7 @@ Now that you have Azure access and the file you want to use downloaded; we are r
 * Navigate to [https://studio.azureml.net/](https://studio.azureml.net/) and log on to Azure studio 
 * Once logged in, select your workspace from the top right-hand menu
 
-![Select Workspace](https://user-images.githubusercontent.com/55206834/86693984-3074f080-bfd9-11ea-842c-a063219b3a39.pnghttps://user-images.githubusercontent.com/55206834/86693984-3074f080-bfd9-11ea-842c-a063219b3a39.png)
-
-* Click on _DATASETS_ in the left-hand column
+![Select Workspace](https://user-images.githubusercontent.com/55206834/86695692-c52c1e00-bfda-11ea-965b-75de8e32ee21.png)
 
 You should now be at this screen:
 
