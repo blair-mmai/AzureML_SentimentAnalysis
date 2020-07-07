@@ -49,7 +49,7 @@ You should now be at this screen:
 
 ![New](https://user-images.githubusercontent.com/55206834/86696166-3370e080-bfdb-11ea-845b-6481a5c3edfc.png)
 
-* Select _DATASET_ from left-hand menu
+* In the left-hand navigation bar with the grey menu, select _DATASET_ 
 
 ![Dataset](https://user-images.githubusercontent.com/55206834/86649527-d7449700-bfaf-11ea-80a6-d768a5475156.png)
 
