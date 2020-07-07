@@ -280,12 +280,12 @@ The model training is now complete.
 * In the search box, enter “_score_”, and you see _Score Model_ module
 * Drag and Drop the _Score Model_ to your canvas
 
-![score](https://user-images.githubusercontent.com/55206834/86661867-268fc500-bfba-11ea-87a9-1c328dee2525.png)
+![score](https://user-images.githubusercontent.com/55206834/86711582-168fd980-bfea-11ea-91e4-861c20920edf.png)
 
 * In the search box, enter “_Evaluate_”, and you see _Evaluate Model_ module
 * Drag and Drop the _Evaluate Model_ to your canvas
 
-![evaluate](https://user-images.githubusercontent.com/55206834/86661782-0e1faa80-bfba-11ea-96af-b42585fbfc96.png)
+![evaluate](https://user-images.githubusercontent.com/55206834/86711510-02e47300-bfea-11ea-9669-8f975b7f620d.png)
 
 * Connect the output node of _Train Model_ to the left input node of _Score Model_
 * Connect _Data Split_ (right output node) to the right input node of _Score Model_
