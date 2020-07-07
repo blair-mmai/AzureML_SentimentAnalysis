@@ -17,9 +17,14 @@ In this tutorial you will:
 
 ## **Pre-Conditions**
 
-Before starting this tutorial, you will need:
+Before starting this tutorial, you will need to:
 1. Download [Bathurst_Tutorial_sentiment.csv](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis) 
-2. Microsoft Azure access – you should have this from MMAI 863.  Try your login [here](https://studio.azureml.net/).  
+> To download the file from the link, click on Code and select Download Zip
+> Unzip the file and keep note of where you have it as you will need it's location later in the tutorial
+
+![download file](https://user-images.githubusercontent.com/55206834/86692985-4635e600-bfd8-11ea-9ca3-6644cf7cb74b.png)
+
+2. Ensure you have Microsoft Azure access – you should have this from MMAI 863.  Try your login [here](https://studio.azureml.net/)  
 
 If you do not have an Azure account, please go here for steps to create your account (link to how to set up your account pending)
 
@@ -31,7 +36,7 @@ Now that you have Azure access and the file you want to use downloaded; we are r
 * Navigate to [https://studio.azureml.net/](https://studio.azureml.net/) and log on to Azure studio 
 * Once logged in, select your workspace from the top right-hand menu
 
-![Select Workspace](https://user-images.githubusercontent.com/55206834/86645925-d3634580-bfac-11ea-8d43-255b5d41f7ce.png)
+![Select Workspace](https://user-images.githubusercontent.com/55206834/86693320-91e88f80-bfd8-11ea-97ad-66df968b5e0b.png)
 
 You should now be at this screen:
 
@@ -52,11 +57,12 @@ You should now be at this screen:
 ![From local file](https://user-images.githubusercontent.com/55206834/86649592-e62b4980-bfaf-11ea-80be-0f3bde1a6add.png)
 
 * Navigate to the _Bathurst_Tutorial_sentiment.csv_ file you downloaded in the pre-conditions
-* Click the _checkbox_
+* Click the _checkmark_
 
-![checkbox](https://user-images.githubusercontent.com/55206834/86649478-cb58d500-bfaf-11ea-8042-90d48261a91d.png)
+![checkmark](https://user-images.githubusercontent.com/55206834/86693984-3074f080-bfd9-11ea-842c-a063219b3a39.png)
 
 * You now have your dataset loaded and ready to use
+* Click on _DATASETS_ in the left hand column
 
 Your screen should now look like this:
 
