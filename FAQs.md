@@ -11,4 +11,6 @@ This process flow might help you. As you see below, you will usually follow a si
 * set the **properties** of your module
 * **Run** your module
 * (Optional) **Visualize** the results of your module
+
+
 ![Azure steps process flow](https://user-images.githubusercontent.com/55206834/86854904-5bb61900-c087-11ea-80a3-286c78de2638.jpg)
