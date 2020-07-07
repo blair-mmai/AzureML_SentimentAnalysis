@@ -205,7 +205,7 @@ You should now see this above _Launch column selector_:
 We will use Azure’s built-in Split Data module.
 * In the search box, enter “_split_”, and you see _Split Data_ Module under _Data Transformation_
 
-![split](https://user-images.githubusercontent.com/55206834/86659920-3efee000-bfb8-11ea-8243-fb47cb353b7d.png)
+![split](https://user-images.githubusercontent.com/55206834/86708145-a3d12f00-bfe6-11ea-900f-09501b887606.png)
 
 * Drag and Drop _Split Data_
 * **Connect** the _Select Columns_ in Dataset module to _Split Data_
@@ -239,7 +239,7 @@ We now have our dataset ready for training. Let us begin!
 * Instantiate the model by selecting the classification algorithm.
 * In the search box, enter “_classification_”, and you see the classification algorithms available
 * Choose your algorithm. In our tutorial, we will be using _Two-class Boosted Decision Tree_
-* Drag and Drop the classifier to your canvas
+* Drag and Drop the _Two-class Boosted Decision Tree_ classifier to your canvas
 
 ![DT](https://user-images.githubusercontent.com/55206834/86660902-2b07ae00-bfb9-11ea-8019-6d396794bff2.png)
 
@@ -249,7 +249,7 @@ We now have our dataset ready for training. Let us begin!
 ![train](https://user-images.githubusercontent.com/55206834/86660726-fd226980-bfb8-11ea-9065-7c2c603715da.png)
 
 * Connect _Two-class Boosted Decision Tree_ to the left input node of _Train Model_
-* Connect the _Training Dataset_ (output of Split Data) to the right input node of **Train Model**
+* Connect the _Training Dataset_ (left output node of _Split Data_ module) to the right input node of **Train Model**
 
 ![Connect](https://user-images.githubusercontent.com/55206834/86660409-b59bdd80-bfb8-11ea-97bd-da2b99f031b4.png)
 
@@ -261,6 +261,7 @@ We now have our dataset ready for training. Let us begin!
 * > Min number of samples = 10
 * > Learning rate = 0.2
 * > Number of trees constructed = 100
+* > Random number seed = 42
 
 ![properties](https://user-images.githubusercontent.com/55206834/86660521-cd736180-bfb8-11ea-8015-2387cfc54eee.png)
 
