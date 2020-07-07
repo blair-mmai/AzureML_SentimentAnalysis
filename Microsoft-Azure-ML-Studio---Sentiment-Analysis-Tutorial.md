@@ -160,6 +160,7 @@ The next step is to extract features you want to use using feature hashing.
 * _Launch column selector_ to select the features you want to include
 * Click on _BY NAME_ on the left-hand side
 * Select _Preprocessed Sentence_ and move it to the right-hand side under _SELECTED COLUMNS_ using the arrow in the center 
+Note: all other fields should be on the left-hand side under _AVAILABLE COLUMNS_
 * Click on the _checkmark_
 
 ![select preprocessed sentence](https://user-images.githubusercontent.com/55206834/86701858-65387600-bfe0-11ea-833c-886b436e4b45.png)
