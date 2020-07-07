@@ -178,7 +178,7 @@ After running the feature hashing modules, we now have clean data with new vecto
 There is a _Select Columns in Dataset_ module available to assist us with this.
 * In the search box, enter “_select_”, and you see _Select Columns in Dataset_ Module under Data Transformation
 
-![search select cols](https://user-images.githubusercontent.com/55206834/86657043-eb8b9280-bfb5-11ea-9b0b-ca652e13a881.png)
+![search select cols](https://user-images.githubusercontent.com/55206834/86702938-6b7b2200-bfe1-11ea-86d9-958fa04f4925.png)
 
 * Drag and Drop _Select Columns in Dataset_ to your canvas
 * Connect the _Feature Hashing_ module to _Select Columns in Dataset_
@@ -186,10 +186,12 @@ There is a _Select Columns in Dataset_ module available to assist us with this.
 ![connect](https://user-images.githubusercontent.com/55206834/86656720-ac5d4180-bfb5-11ea-8b21-2ea50e85c0d3.png)
 
 * Set properties by clicking on the module, and then clicking on _Launch column selector_
-* Select the required columns for ML to use ( In our case study, we **exclude** the columns “_Sentence_” and “_Preprocessed Sentence_”)
-* > Select all hashed columns (do this by **Beginning with all columns** and **excluding** the _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
+* Select the required columns for ML to use (In our case study, we **exclude** the columns “_Sentence_” and “_Preprocessed Sentence_”)
+* > Click on WITH RULES on the left-hand side
+* > Select **Beginning with all columns** and **Exclude** the **column names** _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
+* > Click on the _checkmark_
 
-![begin with all cols](https://user-images.githubusercontent.com/55206834/86657833-8dab7a80-bfb6-11ea-9dd7-5ec676ff0397.png)
+![begin with all cols](https://user-images.githubusercontent.com/55206834/86704054-81d5ad80-bfe2-11ea-8c85-1c3970abaaf8.png)
 
 You should now see all your hashed features selected like this:
 
