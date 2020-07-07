@@ -47,7 +47,7 @@ You should now be at this screen:
 * Click on _DATASETS_ in the left-hand column
 * Click the _+NEW_ in the bottom left of the workspace window
 
-![New](https://user-images.githubusercontent.com/55206834/86696166-3370e080-bfdb-11ea-845b-6481a5c3edfc.png)
+![New Dataset](https://user-images.githubusercontent.com/55206834/86853621-d92c5a00-c084-11ea-9575-5dd06fa43001.png)
 
 * In the left-hand navigation bar with the grey menu, select _DATASET_ 
 
