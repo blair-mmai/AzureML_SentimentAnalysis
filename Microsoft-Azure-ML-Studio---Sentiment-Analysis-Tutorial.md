@@ -241,12 +241,12 @@ We now have our dataset ready for training. Let us begin!
 * Choose your algorithm. In our tutorial, we will be using _Two-class Boosted Decision Tree_
 * Drag and Drop the _Two-class Boosted Decision Tree_ classifier to your canvas
 
-![DT](https://user-images.githubusercontent.com/55206834/86660902-2b07ae00-bfb9-11ea-8019-6d396794bff2.png)
+![search DT](https://user-images.githubusercontent.com/55206834/86709223-b9932400-bfe7-11ea-9db9-47eff1892798.png)
 
 * In the search box, enter “_Train_” to select the _Train Model_ module
 * Drag and Drop the _train model_ module to your canvas
 
-![train](https://user-images.githubusercontent.com/55206834/86660726-fd226980-bfb8-11ea-9065-7c2c603715da.png)
+![train](https://user-images.githubusercontent.com/55206834/86709318-d29bd500-bfe7-11ea-9f91-8bb53f1a3936.png)
 
 * Connect _Two-class Boosted Decision Tree_ to the left input node of _Train Model_
 * Connect the _Training Dataset_ (left output node of _Split Data_ module) to the right input node of **Train Model**
