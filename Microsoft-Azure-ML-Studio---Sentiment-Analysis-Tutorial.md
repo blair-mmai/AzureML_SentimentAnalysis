@@ -60,7 +60,7 @@ You should now be at this screen:
 * Navigate to the _Bathurst_Tutorial_sentiment.csv_ file you downloaded in the pre-conditions
 * Click the _checkmark_
 
-![checkmark](https://user-images.githubusercontent.com/55206834/86693984-3074f080-bfd9-11ea-842c-a063219b3a39.png)
+![checkmark](https://user-images.githubusercontent.com/55206834/86716140-e860c880-bfee-11ea-9d84-2fd4b647e0d5.png)
 
 * You now have your dataset loaded and ready to use
 
