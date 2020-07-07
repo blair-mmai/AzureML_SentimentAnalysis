@@ -341,6 +341,7 @@ You will now see a second tab with your Predictive experiment.
 * Click on BY NAME on the right hand side
 * Scroll all the way down to find **Scored Labels** and **Scored Probabilities** in the Available columns and select them both (click first, hold down shift and click the second)
 * Move them to the right hand Selected columns column by clicking the arrow in the middle
+* Click on the _checkmark_
 
 ![scored labels](https://user-images.githubusercontent.com/55206834/86722018-886d2080-bff4-11ea-969c-e8898a02123a.png)
 
