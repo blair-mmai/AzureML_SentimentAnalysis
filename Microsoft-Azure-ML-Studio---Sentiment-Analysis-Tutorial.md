@@ -40,7 +40,7 @@ Now that you have Azure access and the file you want to use downloaded; we are r
 
 You should now be at this screen:
 
-![Workspace View](https://user-images.githubusercontent.com/55206834/86646031-e7a74280-bfac-11ea-9b6d-1d40106c95af.png){height="250px" width="250px"}
+![Workspace View](https://user-images.githubusercontent.com/55206834/86646031-e7a74280-bfac-11ea-9b6d-1d40106c95af.png)
 
 ### **Step 2 – Load your Dataset** (2)
 
