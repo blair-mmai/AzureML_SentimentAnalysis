@@ -254,7 +254,13 @@ We now have our dataset ready for training. Let us begin!
 ![Connect](https://user-images.githubusercontent.com/55206834/86660409-b59bdd80-bfb8-11ea-97bd-da2b99f031b4.png)
 
 * Set properties by clicking on the module _Train Model_ 
-* Click on _Launch Column Selector_ and select the Label column (_Polarity_ for this tutorial) in the properties of Train Model
+* Click on _Launch Column Selector_ 
+* > Click on _BY NAME_
+* > Select the _Polarity_ column on the right-hand side and move it to the left-hand side under _SELECTED COLUMNS_ using the arrow in the middle
+* > Click on the _checkmark_
+
+![select cols](https://user-images.githubusercontent.com/55206834/86710734-47bbda00-bfe9-11ea-98ef-7aa6a6e078e9.png)
+
 * Set the _properties_ for your model.
 * In our tutorial, we used:
 * > Max number of leaves = 20
@@ -263,9 +269,9 @@ We now have our dataset ready for training. Let us begin!
 * > Number of trees constructed = 100
 * > Random number seed = 42
 
-![properties](https://user-images.githubusercontent.com/55206834/86660521-cd736180-bfb8-11ea-8015-2387cfc54eee.png)
+![DT properties](https://user-images.githubusercontent.com/55206834/86710052-8dc46e00-bfe8-11ea-9c6f-471bb6e004e3.png)
 
-* _Run_ the module
+* _Run_ the _Train Model _module by right-clicking on it and selecting _Run Selected_
 
 The model training is now complete. 
 
