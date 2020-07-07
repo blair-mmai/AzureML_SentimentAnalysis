@@ -293,7 +293,7 @@ The model training is now complete.
 
 ![connect](https://user-images.githubusercontent.com/55206834/86661600-df093900-bfb9-11ea-815a-90d1a2711b88.png)
 
-* _Run_ the module
+* _Run_ the _Evaluate Model_ module by right-clicking and selecting _Run selected_
 * You can visualize the results by right-clicking on _evaluate model_ and selecting _Evaluation Results_ -> _Visualize_
 
 ![visualize](https://user-images.githubusercontent.com/55206834/86662039-5343dc80-bfba-11ea-987b-0c68082056d4.png)
