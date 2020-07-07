@@ -1,12 +1,12 @@
-This section is written to help an executive understand the basics of Platform-as-a-service (PaaS) solution, the different cloud offerings on the market, and associated costs/benefits of Microsoft Azure more specifically.
+This section is written to help an executive understand the basics of Platform as a Service (PaaS) solution, the different cloud offerings on the market, and associated costs/benefits of Microsoft Azure more specifically.
 
 # **Executive Overview**
 
 ## **Cloud and AI - An Overview**
 
-PaaS is a category of cloud computing services that provides a platform (a medium to use) for customers to develop, run, and manage applications with simplicity. PaaS is especially powerful for developing and launching Apps without requiring the complexity of building and maintaining the infrastructure that is typically required.
+PaaS is a category of cloud computing services that provides a platform (a medium to use) for customers to develop, run, and manage applications with simplicity. PaaS is especially powerful for developing and launching apps without requiring the complexity of building and maintaining the infrastructure that is typically required.
 
-The PaaS space is led by 3 companies. Amazon with a market-leading AWS offering, Microsoft with Azure as the second-largest (1) PaaS at 17.6% (2) of the market in February of 2020, and Google with a 3rd place cloud offering at roughly 10% market share. All three of these market leaders offer value as a PaaS as seen in Figure 1 below (3) and have different pricing models as seen in Figure 2 below (3).
+The PaaS space is led by 3 companies. Amazon with a market-leading AWS offering, Microsoft with Azure as the second-largest (1) PaaS at 17.6% (2) of the market in February of 2020, and Google Cloud with a 3rd place cloud offering at roughly 10% market share. All three of these market leaders offer value as a PaaS as seen in Figure 1 below (3) and have different pricing models as seen in Figure 2 below (3).
 
 ![Figure 1 Main ML Market Players Comparison](https://user-images.githubusercontent.com/55206834/86639331-baf02c80-bfa6-11ea-968a-397367814acd.png)
 
