@@ -135,8 +135,11 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ![Sentence](https://user-images.githubusercontent.com/55206834/86880454-b87ef700-c0ba-11ea-815e-c9af4f265b23.png)
 
-* Run the module by right-clicking on the module and selecting _Run Selected_ from the menu 
-* You will know it completed properly by the green checkmark that shows up
+* Run the module by right-clicking on the module and selecting _Run Selected_ from the menu
+
+![Run selected](https://user-images.githubusercontent.com/55206834/86880863-570b5800-c0bb-11ea-893d-975f0efaaa1f.png)
+ 
+* You will know it completed properly by the green checkmark that shows up in your _Preprocess Text_ module on your canvas
 
 ![Run Success](https://user-images.githubusercontent.com/55206834/86654388-e9283900-bfb3-11ea-89f3-34c8a1bb2797.png)
 
@@ -145,12 +148,12 @@ Now it is time to start adding the modules to your experiment canvas.
 
 The next step is to extract features you want to use using feature hashing.
 
-* In the search box, enter “_feature_”, and you see _Feature Hashing_ Module under Text Analytics
+* In the search box, enter “_feature_”, and you see _Feature Hashing_ Module under _Text Analytics_ in the left-hand menu
 
-![hashing](https://user-images.githubusercontent.com/55206834/86654927-55a33800-bfb4-11ea-8cf6-21d40f5edb2d.png)
+![Feature hashing](https://user-images.githubusercontent.com/55206834/86881271-021c1180-c0bc-11ea-8234-1d5bd4465900.png)
 
-* Drag and Drop _Feature Hashing_
-* Connect the output of the Preprocess Text module to the input of the Feature Hashing module
+* Drag and Drop _Feature Hashing_ from the left-hand menu to your canvas under the _Preprocess Text_ module
+* Connect the output of the _Preprocess Text_ module to the input of the _Feature Hashing_ module
 
 ![hashing success](https://user-images.githubusercontent.com/55206834/86654885-4e7c2a00-bfb4-11ea-8fe7-743fc216ec5c.png)
 
