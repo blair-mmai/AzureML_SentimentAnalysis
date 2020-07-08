@@ -72,7 +72,7 @@ Your screen should now look like this:
 
 We are now ready to set up our Architecture. At the end of the tutorial, your Architecture should look like this:
 
-![Architecture](https://user-images.githubusercontent.com/55206834/86651775-d01e8880-bfb1-11ea-85cb-810bc285cf18.png)
+![Finished Architecture](https://user-images.githubusercontent.com/55206834/86887276-4d3b2200-c0c6-11ea-8a02-40dc24ebf9f8.png)
 
 ### **Step 3a – Create an Experiment**
 
