@@ -157,20 +157,21 @@ The next step is to extract features you want to use using feature hashing.
 
 ![hashing success](https://user-images.githubusercontent.com/55206834/86654885-4e7c2a00-bfb4-11ea-8fe7-743fc216ec5c.png)
 
+* Click on the _Feature Hashing_ module on your canvas
 * _Launch column selector_ to select the features you want to include
 * Click on _BY NAME_ on the left-hand side
 * Select _Preprocessed Sentence_ and move it to the right-hand side under _SELECTED COLUMNS_ using the arrow in the center 
 Note: all other fields should be on the left-hand side under _AVAILABLE COLUMNS_
 * Click on the _checkmark_
 
-![select preprocessed sentence](https://user-images.githubusercontent.com/55206834/86701858-65387600-bfe0-11ea-833c-886b436e4b45.png)
+![Select preprocessed Sentence](https://user-images.githubusercontent.com/55206834/86881751-00068280-c0bd-11ea-91ae-b1b3bc05b9e6.png)
 
 * Set the properties you want to use to vectorize the data
 * For the purposes of this tutorial, we have used hashing **bitsize** of _8_  with **n-grams** of _1_
 
-![properties hash](https://user-images.githubusercontent.com/55206834/86655770-f98ce380-bfb4-11ea-9dde-c3a7905bea03.png)
+![Hash Properties](https://user-images.githubusercontent.com/55206834/86881969-72776280-c0bd-11ea-8220-1a24db5eb3b5.png)
 
-* _Run_ the module by right-clicking on it and selecting Run (remember to look for the green checkmark  on your module indicating a successful run before moving on)
+* _Run_ the _Feature Hashing_ module by right-clicking on it and selecting _Run selected_ (remember to look for the green checkmark  on your module indicating a successful run before moving on)
 
 ### **Step 3e – Select the data to pass to your model**
 
