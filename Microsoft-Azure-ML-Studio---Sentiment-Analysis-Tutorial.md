@@ -94,7 +94,7 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ### **Step 3b – Load Your Data**
 
-* Click on _Saved Datasets_
+* From the left-hand menu, Click on _Saved Datasets_
 * Click on _My Datasets_
 * Locate your dataset in My Datasets on the left-hand menu under My Datasets
 * Drag & Drop the Dataset to the right-hand side where your architecture canvas is
