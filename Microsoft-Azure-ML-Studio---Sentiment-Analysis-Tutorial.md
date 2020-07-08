@@ -180,7 +180,7 @@ After running the feature hashing module, we now have preprocessed data and vect
 There is a _Select Columns in Dataset_ module available to assist us with this.
 * In the search box, enter “_select_”, and you see _Select Columns in Dataset_ Module under Data Transformation
 
-![search select cols](https://user-images.githubusercontent.com/55206834/86702938-6b7b2200-bfe1-11ea-86d9-958fa04f4925.png)
+![search select cols](https://user-images.githubusercontent.com/55206834/86882672-a8691680-c0be-11ea-803a-57c265b11f41.png)
 
 * Drag and Drop _Select Columns in Dataset_ to your canvas
 * Connect the _Feature Hashing_ module to _Select Columns in Dataset_
@@ -190,79 +190,80 @@ There is a _Select Columns in Dataset_ module available to assist us with this.
 * Set properties by clicking on the module, and then clicking on _Launch column selector_
 * Select the required columns for ML to use (In our case study, we **exclude** the columns “_Sentence_” and “_Preprocessed Sentence_”)
 * > Click on WITH RULES on the left-hand side
-* > Select **Beginning with all columns** and **Exclude** the **column names** _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
+* > Select **Begin with all columns** and **Exclude** the **column names** _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
 * > Click on the _checkmark_
 
-![begin with all cols](https://user-images.githubusercontent.com/55206834/86704054-81d5ad80-bfe2-11ea-8c85-1c3970abaaf8.png)
+![select columns](https://user-images.githubusercontent.com/55206834/86883169-80c67e00-c0bf-11ea-983f-4adfcabc7f4f.png)
 
 You should now see this above _Launch column selector_:
 
 ![hash select cols](https://user-images.githubusercontent.com/55206834/86705854-4936d380-bfe4-11ea-996a-7ad9170a6d5b.png)
 
-* _Run_ the module by right-clicking on it and selecting _Run selected_ (remember to look for the green checkmark of a successful run before moving on)
+* _Run_ the _Select Columns in Dataset_ module by right-clicking on it and selecting _Run selected_ (remember to look for the green checkmark of a successful run before moving on)
 
 ### **Step 3f – Split your data into training and testing data** (5)
 
 We will use Azure’s built-in Split Data module.
 * In the search box, enter “_split_”, and you see _Split Data_ Module under _Data Transformation_
 
-![split](https://user-images.githubusercontent.com/55206834/86708145-a3d12f00-bfe6-11ea-900f-09501b887606.png)
+![split](https://user-images.githubusercontent.com/55206834/86883411-efa3d700-c0bf-11ea-9801-c63aa85bc55b.png)
 
-* Drag and Drop _Split Data_
+* Drag and Drop the _Split Data_ module to your canvas
 * **Connect** the _Select Columns_ in Dataset module to _Split Data_
 
-![connect](https://user-images.githubusercontent.com/55206834/86659784-2098e480-bfb8-11ea-8ccd-22babc8020bc.png)
+![Connect](https://user-images.githubusercontent.com/55206834/86883560-2d086480-c0c0-11ea-9b32-661978d122f0.png)
 
-* Set properties by clicking on the module
-* Select a single column for the stratification. In our instance: _Polarity_
-* > Click on _Launch column selector_
-* > Click on _BY NAME_
-* > Click on _Polarity_ in the left-hand column and move it to the right-hand column under _SELECTED COLUMNS_ using the arrow in the middle
-
-![stratified split](https://user-images.githubusercontent.com/55206834/86706426-ded26300-bfe4-11ea-8613-9b271b886100.png)
-
-* > Click on the _checkmark_
-
-* Set the remaining properties for your data split
+* Set properties by clicking on the _Split Data_ module
 * > In our example we split the data into _80% training_ data and _20% testing_ data by setting the _Fraction of rows in the firs..._ to 0.8
 * > _Check the box_ for _Randomized split_
 * > Set your _Random seed_ = 42 so that your results are reproduceable
 * > Set _Stratified split_ to _True_
 
-![split properties](https://user-images.githubusercontent.com/55206834/86707403-e9d9c300-bfe5-11ea-909d-dac14bc8cde8.png)
+![split properties](https://user-images.githubusercontent.com/55206834/86884158-29c1a880-c0c1-11ea-9ec8-dd4bc367181f.png)
 
-* _Run_ the module by right-clicking and selecting _Run selected_
+**Note**: Once you set _Stratified split_ to _True_, The _Launch column selector_ option will appear in the right-hand column
 
-We now have our dataset ready for training. Let us begin!
+You now want to select a single column for the stratification. In our instance: _Polarity_
+* > Click on _Launch column selector_
+* > Click on _BY NAME_
+* > Click on _Polarity_ in the left-hand column and move it to the right-hand column under _SELECTED COLUMNS_ using the arrow in the middle
+* > Click on the _checkmark_
+
+![stratified split](https://user-images.githubusercontent.com/55206834/86884596-cb48fa00-c0c1-11ea-8824-39efd8217e5f.png)
+
+* _Run_ the _Stratified split_ module by right-clicking on it and selecting _Run selected_ (remember to look for the green checkmark of a successful run before moving on)
+
+We now have our dataset ready for training. 
 
 ### **Step 3g – Select and train your model** (6)
 
-* Instantiate the model by selecting the classification algorithm.
+Instantiate your model by selecting the classification algorithm. For the purposes of this tutorial, we will be using a Two-class Boosted Decision Tree.
 * In the search box, enter “_classification_”, and you see the classification algorithms available
 * Choose your algorithm. In our tutorial, we will be using _Two-class Boosted Decision Tree_
-* Drag and Drop the _Two-class Boosted Decision Tree_ classifier to your canvas
+* Drag and Drop the _Two-class Boosted Decision Tree_ classifier to your canvas 
 
-![search DT](https://user-images.githubusercontent.com/55206834/86709223-b9932400-bfe7-11ea-9db9-47eff1892798.png)
+![search DT](https://user-images.githubusercontent.com/55206834/86884935-62ae4d00-c0c2-11ea-95e7-eebf11cd3277.png)
 
 * In the search box, enter “_Train_” to select the _Train Model_ module
 * Drag and Drop the _train model_ module to your canvas
 
-![train](https://user-images.githubusercontent.com/55206834/86709318-d29bd500-bfe7-11ea-9f91-8bb53f1a3936.png)
+![search train](https://user-images.githubusercontent.com/55206834/86885225-e10aef00-c0c2-11ea-98df-a16441ab1f6b.png)
 
 * Connect _Two-class Boosted Decision Tree_ to the left input node of _Train Model_
-* Connect the _Training Dataset_ (left output node of _Split Data_ module) to the right input node of **Train Model**
+* Connect the Training Dataset (left output node of _Split Data_ module) to the right input node of the _Train Model_ module
 
 ![Connect](https://user-images.githubusercontent.com/55206834/86660409-b59bdd80-bfb8-11ea-97bd-da2b99f031b4.png)
 
-* Set properties by clicking on the module _Train Model_ 
+* Set training properties by clicking on the module _Train Model_ 
 * Click on _Launch Column Selector_ 
 * > Click on _BY NAME_
 * > Select the _Polarity_ column on the right-hand side and move it to the left-hand side under _SELECTED COLUMNS_ using the arrow in the middle
 * > Click on the _checkmark_
 
-![select cols](https://user-images.githubusercontent.com/55206834/86710734-47bbda00-bfe9-11ea-98ef-7aa6a6e078e9.png)
+![select train cols](https://user-images.githubusercontent.com/55206834/86885555-7d34f600-c0c3-11ea-9300-1fdef642ac61.png)
 
-* Set the _properties_ for your model.
+Set the properties for your model.
+* Click on your _Two-Class Boosted Decision Tree_ module and set the parameters on the left-hand side
 * In our tutorial, we used:
 * > Max number of leaves = 20
 * > Min number of samples = 10
@@ -270,39 +271,43 @@ We now have our dataset ready for training. Let us begin!
 * > Number of trees constructed = 100
 * > Random number seed = 42
 
-![DT properties](https://user-images.githubusercontent.com/55206834/86710052-8dc46e00-bfe8-11ea-9c6f-471bb6e004e3.png)
+![DT properties](https://user-images.githubusercontent.com/55206834/86885826-ec124f00-c0c3-11ea-8227-76d9e4e017f7.png)
 
-* _Run_ the _Train Model _module by right-clicking on it and selecting _Run Selected_
+* _Run_ the _Train Model_ module by right-clicking on it and selecting _Run Selected_ (remember to look for the green checkmark of a successful run before moving on)
 
 The model training is now complete. 
 
 ### **Step 3h – Evaluate your model’s performance**
 
 * In the search box, enter “_score_”, and you see _Score Model_ module
-* Drag and Drop the _Score Model_ to your canvas
+* Drag and Drop the _Score Model_ module to your canvas
 
-![score](https://user-images.githubusercontent.com/55206834/86711582-168fd980-bfea-11ea-91e4-861c20920edf.png)
+![search score](https://user-images.githubusercontent.com/55206834/86886145-67740080-c0c4-11ea-817a-438721f2c362.png)
 
 * In the search box, enter “_Evaluate_”, and you see _Evaluate Model_ module
-* Drag and Drop the _Evaluate Model_ to your canvas
+* Drag and Drop the _Evaluate Model_ module to your canvas
 
-![evaluate](https://user-images.githubusercontent.com/55206834/86711510-02e47300-bfea-11ea-9669-8f975b7f620d.png)
+![search evaluate](https://user-images.githubusercontent.com/55206834/86886314-b326aa00-c0c4-11ea-9855-ae646611a4b8.png)
 
 * Connect the output node of _Train Model_ to the left input node of _Score Model_
-* Connect _Data Split_ (right output node) to the right input node of _Score Model_
+* Connect _Split Data_ (right output node) to the right input node of _Score Model_
 * Connect _Score Model_ to _Evaluate Model_
 
-![connect](https://user-images.githubusercontent.com/55206834/86661600-df093900-bfb9-11ea-815a-90d1a2711b88.png)
+![connect score](https://user-images.githubusercontent.com/55206834/86886558-24665d00-c0c5-11ea-8b9c-eec11fead081.png)
 
-* _Run_ the _Evaluate Model_ module by right-clicking and selecting _Run selected_
-* You can visualize the results by right-clicking on _evaluate model_ and selecting _Evaluation Results_ -> _Visualize_
+* _Run_ the _Evaluate Model_ module by right-clicking on it and selecting _Run selected_ (remember to look for the green checkmark of a successful run before moving on)
+* You can now visualize your results by right-clicking on _evaluate model_ and selecting _Evaluation Results_ -> _Visualize_
 
-![visualize](https://user-images.githubusercontent.com/55206834/86662039-5343dc80-bfba-11ea-987b-0c68082056d4.png)
+![visualize menu](https://user-images.githubusercontent.com/55206834/86886795-8757f400-c0c5-11ea-977c-185ffa637b29.png)
+
+Our model had an F1 score of 0.717
+
+![Visualize ROC](https://user-images.githubusercontent.com/55206834/86887031-f3d2f300-c0c5-11ea-9042-b5b82491fc03.png)
 
 ## **Analyze results**
 
 You can now compare the results you achieved in this tutorial to the results of your NLP Individual Assignment.  
-Feel free to play around with the tutorial and change your data pre-processing or the model you used or it’s parameters.
+Feel free to play around with the tutorial and change the pre-processing you do on your data, the model you use or it’s parameters.
 Team Bathurst found we achieved similar results to the NLP IND assignment question #2 using this tutorial in far less time than it took to build our code submission. 
 
 ## **Deploying your model**
