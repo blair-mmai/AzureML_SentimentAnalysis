@@ -2,9 +2,7 @@ This section is written to help an executive understand the basics of Platform a
 
 # **Executive Overview**
 
-# **Scenario-Based Tutorial**
-
-## **Scenario**
+## **Scenario Based Tutorial**
 As a member of the Data Science team at Bathurst Inc., you have been tasked to create a sentiment analysis tool using Microsoft Azure ML Studio to predict whether tweets related to your products and services are positive and negative for the purposes of:
 
 * Providing the customer experience team with “strong positive” tweets so they can generate an outbound marketing campaign to get promoters to provide online recommendations and strengthen your online presence
