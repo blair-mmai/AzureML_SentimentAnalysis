@@ -84,7 +84,7 @@ We are now ready to set up our Architecture. At the end of the tutorial, your Ar
 * At this point, you can either choose a Blank Experiment or Experiment template (if you want to start from an existing template)
 * For the purposes of this tutorial, click _Blank Experiment_
 
-![Blank Experiment](https://user-images.githubusercontent.com/55206834/86652060-11169d00-bfb2-11ea-96ab-632889a31b28.png)
+![Blank Experiment](https://user-images.githubusercontent.com/55206834/86878900-f9294100-c0b7-11ea-8d0b-41536a934976.png)
 
 * You will see this blank architecture on the screen guiding you in how to set up your experiment architecture:
 
