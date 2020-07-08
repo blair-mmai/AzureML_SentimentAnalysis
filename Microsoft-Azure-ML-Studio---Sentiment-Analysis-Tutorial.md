@@ -155,7 +155,7 @@ The next step is to extract features you want to use using feature hashing.
 * Drag and Drop _Feature Hashing_ from the left-hand menu to your canvas under the _Preprocess Text_ module
 * Connect the output of the _Preprocess Text_ module to the input of the _Feature Hashing_ module
 
-![hashing success](https://user-images.githubusercontent.com/55206834/86654885-4e7c2a00-bfb4-11ea-8fe7-743fc216ec5c.png)
+![Connect hashing](https://user-images.githubusercontent.com/55206834/86882252-f5002200-c0bd-11ea-896d-062e7ccfb6fd.png)
 
 * Click on the _Feature Hashing_ module on your canvas
 * _Launch column selector_ to select the features you want to include
@@ -175,7 +175,7 @@ Note: all other fields should be on the left-hand side under _AVAILABLE COLUMNS_
 
 ### **Step 3e – Select the data to pass to your model**
 
-After running the feature hashing modules, we now have clean data with new vectorized features. We need to select those features and the target features to pass to our ML algorithm.
+After running the feature hashing module, we now have preprocessed data and vectorized the features. We need to select those features and the target feature to pass to our ML algorithm.
 
 There is a _Select Columns in Dataset_ module available to assist us with this.
 * In the search box, enter “_select_”, and you see _Select Columns in Dataset_ Module under Data Transformation
