@@ -158,7 +158,7 @@ The next step is to extract features you want to use using feature hashing.
 ![Connect hashing](https://user-images.githubusercontent.com/55206834/86882252-f5002200-c0bd-11ea-896d-062e7ccfb6fd.png)
 
 * Click on the _Feature Hashing_ module on your canvas
-* _Launch column selector_ to select the features you want to include
+* Click _Launch column selector_ from the right-hand menu to select the features you want to include
 * Click on _BY NAME_ on the left-hand side
 * Select _Preprocessed Sentence_ and move it to the right-hand side under _SELECTED COLUMNS_ using the arrow in the center 
 Note: all other fields should be on the left-hand side under _AVAILABLE COLUMNS_
