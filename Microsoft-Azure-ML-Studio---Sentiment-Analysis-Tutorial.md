@@ -324,7 +324,7 @@ When you are satisfied with your model, it is time to deploy it to production.
 
 You will now see a second tab with your Predictive experiment.
 
-![pred exp](https://user-images.githubusercontent.com/55206834/86663301-95b9e900-bfbb-11ea-978e-68a16abfa287.png)
+![Predictive experiment](https://user-images.githubusercontent.com/55206834/86887636-dbafa380-c0c6-11ea-8161-3e1c36ad6e4c.png)
 
 * Select _RUN_ from the bottom menu to run the full model
 
@@ -337,21 +337,30 @@ You will now see a second tab with your Predictive experiment.
 * The Score Model will contain all the features used to train the model plus 2 other features (Scored Labels, and Scored Probabilities) 
 * In the search in the left-hand column, type "select columns"
 
-![select cols](https://user-images.githubusercontent.com/55206834/86721265-cfa6e180-bff3-11ea-90af-920a51a1f900.png)
+![select cols](https://user-images.githubusercontent.com/55206834/86887945-642e4400-c0c7-11ea-8025-4ec424c1df6c.png)
 
-* Drag and Drop _Select Columns in Dataset_ to the canvas placing it between the _Score Model_ and _Web service output_ 
+* Drag and Drop _Select Columns in Dataset_ module to the Predicted experiment canvas placing it between the _Score Model_ and _Web service output_ 
+
+![add select cols](https://user-images.githubusercontent.com/55206834/86888107-a5beef00-c0c7-11ea-9a51-ea11659fdd95.png)
+
 * Reconnect the _Score Model_ output node to the _Select Columns in Dataset_ input node
 * Connect the _Select Columns in Dataset_ output node to the _Web service output_ top (input) node
+
+![select cols connected](https://user-images.githubusercontent.com/55206834/86888233-d69f2400-c0c7-11ea-9afb-fbb91da301bf.png)
+
 * Click on _Select Columns in Dataset_ module
 * Click on _Launch column selector_ 
 * Click on BY NAME on the right-hand side
-* Scroll all the way down to find **Scored Labels** and **Scored Probabilities** in the Available columns and select them both (click first, hold down shift and click the second)
+* Scroll all the way down the AVAILABLE COLUMNS column on the left to find **Scored Labels** and **Scored Probabilities** and select them both (click first, hold down shift and click the second)
 * Move them to the right hand Selected columns column by clicking the arrow in the middle
+
+![select scored cols](https://user-images.githubusercontent.com/55206834/86888591-69d85980-c0c8-11ea-9e03-ee94bd903f25.png)
+
 * Click on the _checkmark_
 
-![score labels](https://user-images.githubusercontent.com/55206834/86723026-848dce00-bff5-11ea-9234-f3e25e8bf8d5.png)
+![deploy scored cols 2](https://user-images.githubusercontent.com/55206834/86888723-a6a45080-c0c8-11ea-9faa-e8fd34458245.png)
 
-* _Run_ again the Predictive experiment by selecting _Run_ from the bottom menu to get the following: 
+* _Run_ the Predictive experiment again by selecting _Run_ from the bottom menu to get the following: 
 
 The Web service can now be deployed 
 
