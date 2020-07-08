@@ -252,7 +252,7 @@ Instantiate your model by selecting the classification algorithm. For the purpos
 * Connect _Two-class Boosted Decision Tree_ to the left input node of _Train Model_
 * Connect the Training Dataset (left output node of _Split Data_ module) to the right input node of the _Train Model_ module
 
-![Connect](https://user-images.githubusercontent.com/55206834/86660409-b59bdd80-bfb8-11ea-97bd-da2b99f031b4.png)
+![train model connect](https://user-images.githubusercontent.com/55206834/86891447-dd7c6580-c0cc-11ea-8c47-3bb3e377cc21.png)
 
 * Set training properties by clicking on the module _Train Model_ 
 * Click on _Launch Column Selector_ 
