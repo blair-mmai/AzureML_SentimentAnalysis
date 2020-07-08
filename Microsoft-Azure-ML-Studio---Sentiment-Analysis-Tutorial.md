@@ -360,7 +360,9 @@ You will now see a second tab with your Predictive experiment.
 
 ![deploy scored cols 2](https://user-images.githubusercontent.com/55206834/86888723-a6a45080-c0c8-11ea-9faa-e8fd34458245.png)
 
-* _Run_ the Predictive experiment again by selecting _Run_ from the bottom menu to get the following: 
+* _Run_ the Predictive experiment again by selecting _Run_ from the bottom menu 
+
+![run](https://user-images.githubusercontent.com/55206834/86719837-712d3380-bff2-11ea-8ed1-2e790445bb43.png)
 
 The Web service can now be deployed 
 
@@ -368,21 +370,21 @@ The Web service can now be deployed
 
 * Click _DEPLOY WEB SERVICE_ 
 
-![deploy](https://user-images.githubusercontent.com/55206834/86723390-d9c9df80-bff5-11ea-948b-07fbf382ce85.png)
-
-* Click _Deploy_ 
-
-![deploy 2](https://user-images.githubusercontent.com/55206834/86663217-7e7afb80-bfbb-11ea-9a09-399d04fce5cf.png)
+![deploy web service](https://user-images.githubusercontent.com/55206834/86889201-609bbc80-c0c9-11ea-8354-57b836613ccb.png)
 
 ## **Step 3 – Test**
 
 * You can test your newly created web service by selecting Test Web Service
 
-![test](https://user-images.githubusercontent.com/55206834/86663701-fe08ca80-bfbb-11ea-9953-736daa295c5a.png)
+![test](https://user-images.githubusercontent.com/55206834/86890931-0a7c4880-c0cc-11ea-93b2-9d85be866e00.png)
 
-You will see a screen to test your web service.  Type in a sentence and see your prediction. 
+You will see a screen to test your web service.  Type in a sentence and click on the _checkmark_ 
 
-![test 2](https://user-images.githubusercontent.com/55206834/86663780-11b43100-bfbc-11ea-90fb-b1dfd906de35.png)
+![test 2](https://user-images.githubusercontent.com/55206834/86891086-40b9c800-c0cc-11ea-8ed0-ef36b64475e8.png)
+
+Your prediction will show up at the bottom of your window:
+
+![test results](https://user-images.githubusercontent.com/55206834/86891209-7959a180-c0cc-11ea-85d2-8e7c900a0403.png)
 
 # **Conclusion**
 
