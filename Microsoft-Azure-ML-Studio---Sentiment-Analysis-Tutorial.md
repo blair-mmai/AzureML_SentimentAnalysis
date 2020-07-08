@@ -103,18 +103,18 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ### **Step 3c – Pre-process your data** (3)
 
-* In the search box _Search Experiment Items_ type in “_preprocess_”, 
+* In the _Search Experiment Items_ search box type in “_preprocess_”, 
 
 ![search](https://user-images.githubusercontent.com/55206834/86696966-f22d0080-bfdb-11ea-9878-e152865914d6.png)
 
 * You will see _Preprocess Text_ Module under Text Analytics
 
-![Preprocess](https://user-images.githubusercontent.com/55206834/86702468-fe678c80-bfe0-11ea-80e4-da39f9e663fc.png)
+![Preprocess](https://user-images.githubusercontent.com/55206834/86879692-7acd9e80-c0b9-11ea-90fd-582d727dbc3a.png)
 
 * Drag and Drop _Preprocess Text_ to your canvas **below** your dataset box
 * **Connect** the dataset to Preprocess Text module (left connector)
 
-![Connect](https://user-images.githubusercontent.com/55206834/86653572-4a9bd800-bfb3-11ea-86a8-8e48f9833291.png)
+![Connect](https://user-images.githubusercontent.com/55206834/86879759-a486c580-c0b9-11ea-99f0-6f148aff8852.png)
 
 * Set properties:
 * > click on the _Preprocess Text_ module, and look at the right-hand column
