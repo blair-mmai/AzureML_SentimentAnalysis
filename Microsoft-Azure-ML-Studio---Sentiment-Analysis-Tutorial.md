@@ -122,7 +122,7 @@ Now it is time to start adding the modules to your experiment canvas.
 * > Select the type of preprocessing you would like to do from the right-hand side of the screen
 * > For the purposes of this tutorial, we accepted all the **default cleaning** as shown below:
 
-![Properties](https://user-images.githubusercontent.com/55206834/86653645-57203080-bfb3-11ea-8d8e-c1c8e8777488.png)
+![preprocess Properties](https://user-images.githubusercontent.com/55206834/86879972-03e4d580-c0ba-11ea-8213-97f2d0f73938.png)
 
 * > Click _Launch Column selector_
 
@@ -130,13 +130,10 @@ Now it is time to start adding the modules to your experiment canvas.
 
 * > Click _By Name_ on the left-hand side
 * > Select only the _Sentence_ field and move it to the right-hand side under _SELECTED COLUMNS_ using the arrow in the center indicating you want to be pre-processed 
-
-![sentence pre click](https://user-images.githubusercontent.com/55206834/86699391-22759e80-bfde-11ea-858f-2a8654204a1c.png)
-
-Note: all other fields should be on the left-hand side under _AVAILABLE COLUMNS_
+**Note**: Polarity should remain on the left-hand side under _AVAILABLE COLUMNS_
 * Click on the _checkmark_
 
-![sentence](https://user-images.githubusercontent.com/55206834/86699781-85673580-bfde-11ea-9882-61bc3aec6390.png)
+![Sentence](https://user-images.githubusercontent.com/55206834/86880454-b87ef700-c0ba-11ea-815e-c9af4f265b23.png)
 
 * Run the module by right-clicking on the module and selecting _Run Selected_ from the menu 
 * You will know it completed properly by the green checkmark that shows up
