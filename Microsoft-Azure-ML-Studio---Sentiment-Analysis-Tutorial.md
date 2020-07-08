@@ -66,7 +66,7 @@ You should now be at this screen:
 
 Your screen should now look like this:
 
-![Final screen - Step 2](https://user-images.githubusercontent.com/55206834/86649703-fcd1a080-bfaf-11ea-9375-87f612ae98f5.png)
+![Final screen - Step 2](https://user-images.githubusercontent.com/55206834/86878442-e2ceb580-c0b6-11ea-9abd-44e5d2487f3c.png)
 
 ### **Step 3 – Setup your Sentiment Analysis Architecture**
 
