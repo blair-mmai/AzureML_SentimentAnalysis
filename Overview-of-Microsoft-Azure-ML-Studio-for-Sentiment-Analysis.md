@@ -20,7 +20,7 @@ The PaaS space is largely dominated by three companies (as of year ending in Jun
 
 ## **Why Azure?**
 
-A breakdown of the Machine Learning subsets within these top three PaaS providers are highlighted below in Table 1 (2). From this table, it can be observed that Microsoft Azure Machine Learning (ML) Studio scores the highest overall in terms of flexibility, usability, and accuracy while maintaining a low training time. A brief explanation of why ML Studio does so well is below:
+A breakdown of the Machine Learning subsets within these top three PaaS providers are highlighted in Table 1 below (2). From this table, it can be observed that Microsoft Azure Machine Learning (ML) Studio scores the highest overall in terms of flexibility, usability, and accuracy while maintaining a low training time. A brief explanation of why ML Studio does so well is below:
 
 * ML Studio is a fully managed collaborative drag-and-drop dashboard tool, which makes it easy to quickly learn and use
 * It publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel (3)
