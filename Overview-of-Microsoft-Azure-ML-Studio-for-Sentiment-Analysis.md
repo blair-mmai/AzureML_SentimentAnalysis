@@ -36,27 +36,27 @@ The use of natural language processing, text analysis, computational linguistics
 
 Example Use Case: 
 * Identifying customer insights to predict or prevent things like churn
-> * Monitor social media feeds <-- **this is the one we will examine in our tutorial**
-> * Analyzing customer satisfaction survey results (uses key phrase extraction as well)
-> * Analyzing recorded inbound customer calls (uses key phrase extraction as well)
+> Monitor social media feeds <-- **this is the one we will examine in our tutorial**
+> Analyzing customer satisfaction survey results (uses key phrase extraction as well)
+> Analyzing recorded inbound customer calls (uses key phrase extraction as well)
 
 ### _Key Phrase Extraction_
 
 Example Use Case:
 * Optimize support to save money
-> * Process and categorize support incidents
+> Process and categorize support incidents
 
 ### _Named Entity Recognition_
 
 Example Use Case:
 * Documentation Management & Compliance
-> * Classify and redact documents that have sensitive information
+> Classify and redact documents that have sensitive information
 
-### _Language Detection _
+### _Language Detection_
 
 Example Use Case:
 * Document Management
-> * Classify a corpus of documents by language or dialect
+> Classify a corpus of documents by language or dialect
 
 More information on each of these tools can be found [ here]( https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview) (5).
 
