@@ -30,28 +30,31 @@ A breakdown of the Machine Learning subsets within these top three PaaS provider
 
 ML Studio’s Text Analytics API is specifically designed for text related business cases such as classifying our tweet dataset. The four analysis tools within this API are found below with example use cases (4).  
 
-**_Sentiment Analysis_ <-- This is what your business use case requires**
+_Sentiment Analysis_ <-- **This is what your business use case requires**
 
 The use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.
 
-**Use Cases:** 
+**Example Use Cases:** 
 * Identifying customer insights to predict or prevent things like churn
 *** Monitor social media feeds <-- this is the one we will examine in our tutorial**
 * Analyzing customer satisfaction survey results (uses key phrase extraction as well)
 * Analyzing recorded inbound customer calls (uses key phrase extraction as well)
 
 _Key Phrase Extraction_
-**Use Case:** 
+
+**Example Use Case:** 
 * Optimize support to save money
 * > Process and categorize support incidents
 
 _Named Entity Recognition_
-**Use Case: **
+
+**Example Use Case: **
 * Documentation Management & Compliance
 > * Classify and redact documents that have sensitive information
 
 _Language Detection _
-**Use Case: **
+
+**Example Use Case: **
 * Document Management
 > * Classify a corpus of documents by language or dialect
 
