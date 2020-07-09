@@ -26,6 +26,8 @@ A breakdown of the Machine Learning subsets within these top three PaaS provider
 * It publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel (3)
 * It contains standard experiment templates, which allow users to obtain results quickly
 
+![Table 1 - Main ML Market Players Comparison](https://user-images.githubusercontent.com/55206834/86994708-14a65180-c175-11ea-818d-f666f8a97912.png)
+
 ## **Azure Text Analytics Functionality & Use Cases**
 
 ML Studio’s Text Analytics API is specifically designed for text related business cases such as classifying our tweet dataset. The four analysis tools within this API are found below with example use cases (4).  
