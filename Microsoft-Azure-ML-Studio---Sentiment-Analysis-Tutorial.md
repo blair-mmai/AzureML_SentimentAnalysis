@@ -120,6 +120,8 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ![preprocess Properties](https://user-images.githubusercontent.com/55206834/86879972-03e4d580-c0ba-11ea-8213-97f2d0f73938.png)
 
+Although we selected the default values for data preprocessing in our tutorial, remember that too much preprocessing can negatively impact your data classification results. For instance, removing stopwords will remove "not" from your dataset can take out the negation implication of a bad sentiment. (e.g. "the food was not good" with stopwords removed becomes "food good" which is not the original intent of the tweet)
+
 * > Click _Launch Column selector_
 
 ![launch column selector](https://user-images.githubusercontent.com/55206834/86697725-a7f84f00-bfdc-11ea-8efc-c5101ada4a56.png)
@@ -142,7 +144,7 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ### **Step 3d – Vectorization**
 
-The next step is to extract features you want to use using feature hashing.
+The next step is to extract features you want to use using feature hashing. Hashing is how Microsoft Azure ML converts plain text to a vector (a set of integer features) (5)
 
 * In the search box, enter “_feature_”, and you see _Feature Hashing_ Module under _Text Analytics_ in the left-hand menu
 
@@ -164,6 +166,7 @@ Note: all other fields should be on the left-hand side under _AVAILABLE COLUMNS_
 
 * Set the properties you want to use to vectorize the data
 * For the purposes of this tutorial, we have used hashing **bitsize** of _8_  with **n-grams** of _1_
+We selected n-grams of 1 in this case because our dataset contains both food reviews and movie reviews. Using a higher value in n-grams would not very useful as the vector space will already be sparse with not many features overlapping between food references and movie references and selecting a higher n-gram value would just make that issue worse. With a more consistent dataset, you can select a higher value for n-grams to embed context in your vector space.
 
 ![Hash Properties](https://user-images.githubusercontent.com/55206834/86881969-72776280-c0bd-11ea-8220-1a24db5eb3b5.png)
 
@@ -197,7 +200,7 @@ You should now see this above _Launch column selector_:
 
 * _Run_ the _Select Columns in Dataset_ module by right-clicking on it and selecting _Run selected_ (remember to look for the green checkmark of a successful run before moving on)
 
-### **Step 3f – Split your data into training and testing data** (5)
+### **Step 3f – Split your data into training and testing data** (6)
 
 We will use Azure’s built-in Split Data module.
 * In the search box, enter “_split_”, and you see _Split Data_ Module under _Data Transformation_
@@ -231,9 +234,9 @@ You now want to select a single column for the stratification. In our instance: 
 
 We now have our dataset ready for training. 
 
-### **Step 3g – Select and train your model** (6)
+### **Step 3g – Select and train your model** (7)
 
-Instantiate your model by selecting the classification algorithm. For the purposes of this tutorial, we will be using a Two-class Boosted Decision Tree.
+Instantiate your model by selecting the classification algorithm. For the purposes of this tutorial, we will be using a Two-class Boosted Decision Tree. We chose the Two-class Boosted Decision Tree as it was an explainable model making it easier for executives to understand the first iteration of this machine learning implementation. We also know that Boosting will improve our results by virtue of it being an ensemble. 
 * In the search box, enter “_classification_”, and you see the classification algorithms available
 * Choose your algorithm. In our tutorial, we will be using _Two-class Boosted Decision Tree_
 * Drag and Drop the _Two-class Boosted Decision Tree_ classifier to your canvas 
@@ -260,7 +263,7 @@ Instantiate your model by selecting the classification algorithm. For the purpos
 
 Set the properties for your model.
 * Click on your _Two-Class Boosted Decision Tree_ module and set the parameters on the left-hand side
-* In our tutorial, we used:
+* In our tutorial, we used the default settings of:
 * > Max number of leaves = 20
 * > Min number of samples = 10
 * > Learning rate = 0.2
@@ -268,6 +271,8 @@ Set the properties for your model.
 * > Random number seed = 42
 
 ![DT properties](https://user-images.githubusercontent.com/55206834/86885826-ec124f00-c0c3-11ea-8227-76d9e4e017f7.png)
+
+Beware of using the default values in real-world applications as you can end up with large trees or even overfit your model. Although we are only showing you one model with no hyperparameter tuning in this tutorial, it is recommended that you test several models and perform hyperparameter tuning in real-world scenarios. 
 
 * _Run_ the _Train Model_ module by right-clicking on it and selecting _Run Selected_ (remember to look for the green checkmark of a successful run before moving on)
 
@@ -296,7 +301,7 @@ The model training is now complete.
 
 ![visualize menu](https://user-images.githubusercontent.com/55206834/86886795-8757f400-c0c5-11ea-977c-185ffa637b29.png)
 
-Our model had an F1 score of 0.717
+We chose to look at F1 score for our model as our dataset was fairly well balanced and F1 score takes into account precision and recall. Our model had an F1 score of 0.717 which is not too bad for a quick first attempt at sentiment analysis considering our dataset contains two different types of tweets (food and movie reviews). We would not, however, recommend rolling this out as-is in production. We would want to try other models, adjust our pre-processing and perform hyperparameter tuning to improve this score before rolling it out. 
 
 ![Visualize ROC](https://user-images.githubusercontent.com/55206834/86887031-f3d2f300-c0c5-11ea-9042-b5b82491fc03.png)
 
@@ -304,9 +309,8 @@ Our model had an F1 score of 0.717
 
 You can now compare the results you achieved in this tutorial to the results of your NLP Individual Assignment.  
 Feel free to play around with the tutorial and change the pre-processing you do on your data, the model you use or it’s parameters.
-Team Bathurst found we achieved similar results to the NLP IND assignment question #2 using this tutorial in far less time than it took to build our code submission. 
 
-## **Deploying your model**
+## **Deploying your model** (8)
 
 When you are satisfied with your model, it is time to deploy it to production.  
 
@@ -385,22 +389,33 @@ Your prediction will show up at the bottom of your window:
 # **Conclusion**
 
 We started this exercise with a business problem to solve.  
-As a member of the Data Science team at Bathurst Inc., you have been tasked to create a sentiment analysis tool using Microsoft Azure ML Studio to predict whether tweets related to your products and services are positive and negative for the purposes of:
 
-* Providing the customer experience team with “strong positive” tweets so they can generate an outbound marketing campaign to get promoters to provide online recommendations and strengthen your online presence
-* Providing the customer retention team with “strong negative” tweets so they can address the issues with the customers and turn detractors into (at worst) neutral, (at best) promoters of the company
+Now that you have quickly built a sentiment analysis experiment, you can impress your new boss with an example of the art-of-the-possible. If this is well received and a business case can be made to implement this type of solution, you can refine your model and when you are happy with your results you can easily extend it for use as an API in a custom-built script for free (for up to 1,000 transactions). You can link to it using the Excel add-in (9) and allow your customer experience team to have direct access to it or your could create an application that references the API and:
+* Scrapes tweets
+* Classifies them as positive or negative
+* Generates reports on that data for your customer experience team
 
-Now that you have a sentiment analysis experiment, you can easily extend it for use as an API in a custom-built script for free (for up to 1,000 transactions) to test if this is valuable by:
-* Scraping tweets and classifying them as positive or negative
-* Generating some reports on that data for your customer experience team
+We hope you enjoyed this tutorial and that you have a better understanding of how you can easily use Microsoft Azure ML to do Sentiment Analysis quickly and easily.
 
 **Other reference material:**
 (1) for more information on setting up your workspace, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-workspace
+
 (2) For another tutorial example, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/tutorial-part1-credit-risk
+
 (3) To learn more about preprocessing data in Azure ML studio, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/preprocess-text?redirectedfrom=MSDN
+
 (4) To learn more about the hashing function, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/feature-hashing?redirectedfrom=MSDN
-(5) To learn more about how to split data in Azure ML, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/split-data?redirectedfrom=MSDN
-(6) To learn more about training models, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/train-model?redirectedfrom=MSDN
-(7) For more information on web services, please refer to:https://services.azureml.net/subscriptions/9887b0c8-8f21-4ab3-9265-d4e879c54888/resourceGroups/bamservice/providers/Microsoft.MachineLearning/webServices/Sentiment2create.2020.7.3.22.56.47.8/test/rrs
+
+(5) For more information on hashing, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/feature-hashing#:~:text=Use%20the%20Feature%20Hashing%20module,based%20on%20the%20nimbusml%20framework.
+
+(6) To learn more about how to split data in Azure ML, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/split-data?redirectedfrom=MSDN
+
+(7) To learn more about training models, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/train-model?redirectedfrom=MSDN
+
+(8) For more information on web services, please refer to: https://services.azureml.net/subscriptions/9887b0c8-8f21-4ab3-9265-d4e879c54888/resourceGroups/bamservice/providers/Microsoft.MachineLearning/webServices/Sentiment2create.2020.7.3.22.56.47.8/test/rrs
+
+(9) For more information on how to use Excel to access your Azure ML web service, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/excel-add-in-for-web-services
+
+
 
 
