@@ -34,25 +34,25 @@ ML Studio’s Text Analytics API is specifically designed for text related busin
 
 The use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.
 
-**Example Use Cases:** 
+Example Use Cases: 
 * Identifying customer insights to predict or prevent things like churn
-**> * Monitor social media feeds <-- this is the one we will examine in our tutorial**
-> > * Analyzing customer satisfaction survey results (uses key phrase extraction as well)
+> * Monitor social media feeds <-- **this is the one we will examine in our tutorial**
+> * Analyzing customer satisfaction survey results (uses key phrase extraction as well)
 > * Analyzing recorded inbound customer calls (uses key phrase extraction as well)
 
-_Key Phrase Extraction_
+### _Key Phrase Extraction_
 
-**Example Use Case:** 
+Example Use Case:
 * Optimize support to save money
 * > Process and categorize support incidents
 
-_Named Entity Recognition_
+### _Named Entity Recognition_
 
-**Example Use Case: **
+Example Use Case:
 * Documentation Management & Compliance
 > * Classify and redact documents that have sensitive information
 
-_Language Detection _
+### _Language Detection _
 
 **Example Use Case: **
 * Document Management
