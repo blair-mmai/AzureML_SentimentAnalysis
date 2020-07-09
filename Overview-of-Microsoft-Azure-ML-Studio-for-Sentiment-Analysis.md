@@ -37,7 +37,9 @@ The use of natural language processing, text analysis, computational linguistics
 Example Use Case: 
 * Identifying customer insights to predict or prevent things like churn
 > Monitor social media feeds <-- **this is the one we will examine in our tutorial**
+
 > Analyzing customer satisfaction survey results (uses key phrase extraction as well)
+
 > Analyzing recorded inbound customer calls (uses key phrase extraction as well)
 
 ### _Key Phrase Extraction_
