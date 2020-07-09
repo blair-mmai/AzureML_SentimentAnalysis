@@ -398,6 +398,7 @@ Now that you have quickly built a sentiment analysis experiment, you can impress
 We hope you enjoyed this tutorial and that you have a better understanding of how you can easily use Microsoft Azure ML to do Sentiment Analysis quickly and easily.
 
 **Other reference material:**
+
 (1) for more information on setting up your workspace, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-workspace
 
 (2) For another tutorial example, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/tutorial-part1-credit-risk
