@@ -64,7 +64,7 @@ More information on each of these tools can be found [ here]( https://docs.micro
 
 In conclusion, Azure’s ML Studio is well suited for the business problem we are presented with: using sentiment analysis to classify tweets. This specific PaaS is user friendly and provides the end-to-end ability for users to build, test and deploy predictive analytics solutions on their data. The Text Analytics API within ML Studio is extremely powerful and already contains pre-existing Sentiment Analysis tools and experiments, which can expedite project implementation. 
 
-Good luck with running your tutorial. Remember to check the [FAQs](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/FAQs) if you run into issues.
+Good luck with running your [tutorial](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/Microsoft-Azure-ML-Studio---Sentiment-Analysis-Tutorial). Remember to check the [FAQs](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/FAQs) if you run into issues.
 
 
 **References:**
