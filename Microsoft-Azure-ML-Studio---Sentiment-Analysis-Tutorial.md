@@ -1,14 +1,14 @@
 # **Scenario-Based Tutorial**
 
-For a description of the Business Problem you are solving in this tutorial, please refer to the Overview page.
+For a description of the Business Problem you are solving in this tutorial, please refer to the [Overview](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/Overview-of-Microsoft-Azure-ML-Studio-for-Sentiment-Analysis) page.
 
 ## **Task Outline**
 
 In this tutorial you will:
-* Learn how to setup a Microsoft Azure ML Studio experiment
+* Learn how to set up a Microsoft Azure ML Studio experiment
 * Create an architecture for doing sentiment analysis
 * Learn how to configure your Azure ML architecture
-* Use tutorial_sentiment_train.csv (a combined version of sentiment_train.csv and sentiment_test.csv from your NLP IND assignment) to see how the Azure ML algorithm performs relative to other exercises you have already done.
+* Use tutorial_sentiment_train.csv (a combined version of sentiment_train.csv and sentiment_test.csv from your NLP IND assignment) to see how the Azure ML algorithm performs relative to other exercises you have already done using this dataset.
 * Learn how to deploy an Azure ML Sentiment Analysis algorithm into production
 
 ## **Pre-Conditions**
@@ -16,7 +16,7 @@ In this tutorial you will:
 Before starting this tutorial, you will need to:
 1. Download [Bathurst_Tutorial_sentiment.csv](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis) 
 > To download the file from the link, click on Code and select Download Zip
-> Unzip the file and keep note of where you have it as you will need it's location later in the tutorial
+> Unzip the file and keep a note of where you have it as you will need it's location later in the tutorial
 
 ![download file](https://user-images.githubusercontent.com/55206834/86694747-e6403f00-bfd9-11ea-9069-397e50b29005.png)
 
