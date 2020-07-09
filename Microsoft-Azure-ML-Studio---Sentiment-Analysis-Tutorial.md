@@ -189,7 +189,7 @@ There is a _Select Columns in Dataset_ module available to assist us with this.
 * Set properties by clicking on the module, and then clicking on _Launch column selector_
 * Select the required columns for ML to use (In our case study, we **exclude** the columns “_Sentence_” and “_Preprocessed Sentence_”)
 * > Click on WITH RULES on the left-hand side
-* > Select **Begin with all columns** and **Exclude** the **column names** _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
+* > Select **Begin with: all columns** and **Exclude** the **column names** _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
 * > Click on the _checkmark_
 
 ![select columns](https://user-images.githubusercontent.com/55206834/86883169-80c67e00-c0bf-11ea-983f-4adfcabc7f4f.png)
@@ -203,7 +203,7 @@ You should now see this above _Launch column selector_:
 ### **Step 3f – Split your data into training and testing data** (6)
 
 We will use Azure’s built-in Split Data module.
-* In the search box, enter “_split_”, and you see _Split Data_ Module under _Data Transformation_
+* In the search box, enter “_split_”, and you see _Split Data_ Module under _Data Transformation/Manipulation_
 
 ![split](https://user-images.githubusercontent.com/55206834/86883411-efa3d700-c0bf-11ea-9801-c63aa85bc55b.png)
 
@@ -213,7 +213,7 @@ We will use Azure’s built-in Split Data module.
 ![Connect](https://user-images.githubusercontent.com/55206834/86883560-2d086480-c0c0-11ea-9b32-661978d122f0.png)
 
 * Set properties by clicking on the _Split Data_ module
-* > In our example we split the data into _80% training_ data and _20% testing_ data by setting the _Fraction of rows in the firs..._ to 0.8
+* > In our example we split the data into _80% training_ data and _20% testing_ data by setting the _Fraction of rows in the first_ to 0.8
 * > _Check the box_ for _Randomized split_
 * > Set your _Random seed_ = 42 so that your results are reproduceable
 * > Set _Stratified split_ to _True_
@@ -244,7 +244,7 @@ Instantiate your model by selecting the classification algorithm. For the purpos
 ![search DT](https://user-images.githubusercontent.com/55206834/86884935-62ae4d00-c0c2-11ea-95e7-eebf11cd3277.png)
 
 * In the search box, enter “_Train_” to select the _Train Model_ module
-* Drag and Drop the _train model_ module to your canvas
+* Drag and Drop the _train model_ module to your canvas beside your _Split Data_ module
 
 ![search train](https://user-images.githubusercontent.com/55206834/86885225-e10aef00-c0c2-11ea-98df-a16441ab1f6b.png)
 
