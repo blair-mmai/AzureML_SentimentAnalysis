@@ -22,9 +22,9 @@ The PaaS space is largely dominated by three companies (as of year ending in Jun
 
 A breakdown of the Machine Learning subsets within these top three PaaS providers are highlighted below in Table 1 (2). From this table, it can be observed that Microsoft Azure Machine Learning (ML) Studio scores the highest overall in terms of flexibility, usability, and accuracy while maintaining a low training time. A brief explanation of why ML Studio does so well is below:
 
-1. ML Studio is a fully managed collaborative drag-and-drop dashboard tool, which makes it easy to quickly learn and use
-2. Additionally, it publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel (3)
-3. Finally, ML Studio contains standard experiment templates, which allow users to obtain results quickly
+* ML Studio is a fully managed collaborative drag-and-drop dashboard tool, which makes it easy to quickly learn and use
+* It publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel (3)
+* It contains standard experiment templates, which allow users to obtain results quickly
 
 ## **Azure Text Analytics Functionality & Use Cases**
 
@@ -34,7 +34,7 @@ ML Studio’s Text Analytics API is specifically designed for text related busin
 
 The use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.
 
-Example Use Cases: 
+Example Use Case: 
 * Identifying customer insights to predict or prevent things like churn
 > * Monitor social media feeds <-- **this is the one we will examine in our tutorial**
 > * Analyzing customer satisfaction survey results (uses key phrase extraction as well)
@@ -44,7 +44,7 @@ Example Use Cases:
 
 Example Use Case:
 * Optimize support to save money
-* > Process and categorize support incidents
+> * Process and categorize support incidents
 
 ### _Named Entity Recognition_
 
@@ -54,7 +54,7 @@ Example Use Case:
 
 ### _Language Detection _
 
-**Example Use Case: **
+Example Use Case:
 * Document Management
 > * Classify a corpus of documents by language or dialect
 
