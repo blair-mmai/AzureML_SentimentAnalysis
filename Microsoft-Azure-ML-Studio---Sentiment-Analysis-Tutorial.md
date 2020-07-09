@@ -120,7 +120,7 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ![preprocess Properties](https://user-images.githubusercontent.com/55206834/86879972-03e4d580-c0ba-11ea-8213-97f2d0f73938.png)
 
-Although we selected the default values for data preprocessing in our tutorial, remember that too much preprocessing can negatively impact your data classification results. For instance, removing stopwords will remove "not" from your dataset can take out the negation implication of a bad sentiment. (e.g. "the food was not good" with stopwords removed becomes "food good" which is not the original intent of the tweet)
+![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png)  Although we selected the default values for data preprocessing in our tutorial, remember that too much preprocessing can negatively impact your data classification results. For instance, removing stopwords will remove "not" from your dataset can take out the negation implication of a bad sentiment. (e.g. "the food was not good" with stopwords removed becomes "food good" which is not the original intent of the tweet)
 
 * > Click _Launch Column selector_
 
@@ -272,7 +272,7 @@ Set the properties for your model.
 
 ![DT properties](https://user-images.githubusercontent.com/55206834/86885826-ec124f00-c0c3-11ea-8227-76d9e4e017f7.png)
 
-Beware of using the default values in real-world applications as you can end up with large trees or even overfit your model. Although we are only showing you one model with no hyperparameter tuning in this tutorial, it is recommended that you test several models and perform hyperparameter tuning in real-world scenarios. 
+![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png)  Beware of using the default values in real-world applications as you can end up with large trees or even overfit your model. Although we are only showing you one model with no hyperparameter tuning in this tutorial, it is recommended that you test several models and perform hyperparameter tuning in real-world scenarios. 
 
 * _Run_ the _Train Model_ module by right-clicking on it and selecting _Run Selected_ (remember to look for the green checkmark of a successful run before moving on)
 
