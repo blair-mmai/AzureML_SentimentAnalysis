@@ -68,6 +68,7 @@ Good luck with running your tutorial. Remember to check the FAQs if you run into
 
 
 **References:**
+
 (1) https://www.statista.com/statistics/1052864/worldwide-iaas-paas-vendor-share/
 
 (2) https://medium.com/kontikilabs/comparing-machine-learning-ml-services-from-various-cloud-ml-service-providers-63c8a2626cb6 
