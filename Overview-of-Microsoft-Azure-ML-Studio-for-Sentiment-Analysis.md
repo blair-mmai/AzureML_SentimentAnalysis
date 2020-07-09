@@ -30,15 +30,15 @@ A breakdown of the Machine Learning subsets within these top three PaaS provider
 
 ML Studio’s Text Analytics API is specifically designed for text related business cases such as classifying our tweet dataset. The four analysis tools within this API are found below with example use cases (4).  
 
-_Sentiment Analysis_ <-- **This is what your business use case requires**
+### _Sentiment Analysis_ <-- **This is what your business use case requires**
 
 The use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.
 
 **Example Use Cases:** 
 * Identifying customer insights to predict or prevent things like churn
-*** Monitor social media feeds <-- this is the one we will examine in our tutorial**
-* Analyzing customer satisfaction survey results (uses key phrase extraction as well)
-* Analyzing recorded inbound customer calls (uses key phrase extraction as well)
+**> * Monitor social media feeds <-- this is the one we will examine in our tutorial**
+> > * Analyzing customer satisfaction survey results (uses key phrase extraction as well)
+> * Analyzing recorded inbound customer calls (uses key phrase extraction as well)
 
 _Key Phrase Extraction_
 
@@ -64,7 +64,7 @@ More information on each of these tools can be found [ here]( https://docs.micro
 
 In conclusion, Azure’s ML Studio is well suited for the business problem we are presented with: using sentiment analysis to classify tweets. This specific PaaS is user friendly and provides the end-to-end ability for users to build, test and deploy predictive analytics solutions on their data. The Text Analytics API within ML Studio is extremely powerful and already contains pre-existing Sentiment Analysis tools and experiments, which can expedite project implementation. 
 
-Good luck with running your tutorial. Remember to check the FAQs if you run into issues.
+Good luck with running your tutorial. Remember to check the [FAQs](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/FAQs) if you run into issues.
 
 
 **References:**
