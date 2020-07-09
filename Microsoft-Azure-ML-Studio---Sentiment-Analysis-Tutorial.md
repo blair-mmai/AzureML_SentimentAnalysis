@@ -374,17 +374,25 @@ The Web service can now be deployed
 
 ## **Step 3 – Test**
 
-* You can test your newly created web service by selecting Test Web Service
+* You can test your newly created web service by selecting _New Web Service Experience_
 
-![test](https://user-images.githubusercontent.com/55206834/86890931-0a7c4880-c0cc-11ea-93b2-9d85be866e00.png)
+![Test_New Web Services Experience](https://user-images.githubusercontent.com/55206834/86998303-19bbce80-c17e-11ea-9a24-3ea85109e140.png)
 
-You will see a screen to test your web service.  Type in a sentence and click on the _checkmark_ 
+* Click on _Test Endpoint_
 
-![test 2](https://user-images.githubusercontent.com/55206834/86891086-40b9c800-c0cc-11ea-8ed0-ef36b64475e8.png)
+![Test Endpoint](https://user-images.githubusercontent.com/55206834/86998414-58518900-c17e-11ea-8334-58ae8728cb83.png)
 
-Your prediction will show up at the bottom of your window:
+You will see a screen to test your web service.  
+* Type in some text in the Sentence field and click on the _Test Request Response_ 
+Your result will appear on the right-hand side of the screen.
 
-![test results](https://user-images.githubusercontent.com/55206834/86891209-7959a180-c0cc-11ea-85d2-8e7c900a0403.png)
+Example of positive sentiment test:
+
+![Post test output](https://user-images.githubusercontent.com/55206834/86998235-f1cc6b00-c17d-11ea-9a34-463f5e751327.png)
+
+Example of negative sentiment test:
+
+![Neg test output](https://user-images.githubusercontent.com/55206834/86997992-6a7ef780-c17d-11ea-81e1-bf173f937558.png)
 
 # **Conclusion**
 
