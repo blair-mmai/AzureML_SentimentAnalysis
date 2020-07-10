@@ -19,4 +19,4 @@ This process flow might help you. As you see below, you will usually follow a si
 
 ## **2. Is it possible for me to remove certain stopwords? e.g. "not"**
 
-Yes it is! For more information on how to do this, please refer to this Microsoft [link](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/preprocess-text#bkmk_TechnicalNotes). 
+Yes it is! For more information on how to do this, please refer to this Microsoft [link](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/preprocess-text#bkmk_TechnicalNotes) and this [experiment](https://gallery.azure.ai/Experiment/How-to-modify-default-stopword-list-1). 
