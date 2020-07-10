@@ -20,9 +20,9 @@ The PaaS space is largely dominated by three companies (as of year ending in Jun
 
 ## **Why Azure?**
 
-A breakdown of the Machine Learning subsets within these top three PaaS providers are highlighted in Table 1 below (2). From this table, it can be observed that Microsoft Azure Machine Learning (ML) Studio scores the highest overall in terms of flexibility, usability, and accuracy while maintaining a low training time. A brief explanation of why ML Studio does so well is below:
+A breakdown of the machine learning subsets within these top three PaaS providers are highlighted in Table 1 below (2). From this table, it can be observed that Microsoft Azure Machine Learning (ML) Studio scores the highest overall in terms of flexibility, usability, and accuracy while maintaining a low training time. A brief explanation of why ML Studio does so well is below:
 
-* ML Studio is a fully managed collaborative drag-and-drop dashboard tool, which makes it easy to quickly learn and use
+* It is a fully managed collaborative drag-and-drop dashboard tool, which makes it easy to quickly learn and use
 * It publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel (3)
 * It contains standard experiment templates, which allow users to obtain results quickly
 
@@ -36,7 +36,7 @@ ML Studio’s Text Analytics API is specifically designed for text related busin
 
 The use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.
 
-Example Use Case: 
+Example Use Cases: 
 * Identifying customer insights to predict or prevent things like churn
 > Monitor social media feeds <-- **this is the one we will examine in our tutorial**
 
@@ -53,7 +53,7 @@ Example Use Case:
 ### _Named Entity Recognition_
 
 Example Use Case:
-* Documentation Management & Compliance
+* Documentation management & compliance
 > Classify and redact documents that have sensitive information
 
 ### _Language Detection_
@@ -66,7 +66,7 @@ More information on each of these tools can be found [ here]( https://docs.micro
 
 # **Azure for Sentiment Analysis**
 
-In conclusion, Azure’s ML Studio is well suited for the business problem we are presented with: using sentiment analysis to classify tweets. This specific PaaS is user friendly and provides the end-to-end ability for users to build, test and deploy predictive analytics solutions on their data. The Text Analytics API within ML Studio is extremely powerful and already contains pre-existing Sentiment Analysis tools and experiments, which can expedite project implementation. 
+In conclusion, Azure’s ML Studio is well suited for the business problem you have been given: using sentiment analysis to classify tweets. This specific PaaS is user friendly and provides the end-to-end ability for users to build, test and deploy predictive analytics solutions on their data. The Text Analytics API within ML Studio is extremely powerful and already contains pre-existing Sentiment Analysis tools and experiments, which can expedite project implementation. 
 
 Good luck with running your [tutorial](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/Microsoft-Azure-ML-Studio---Sentiment-Analysis-Tutorial). Remember to check the [FAQs](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/FAQs) if you run into issues.
 
