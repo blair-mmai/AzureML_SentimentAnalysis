@@ -405,6 +405,16 @@ Output:
 
 ![Negative test output](https://user-images.githubusercontent.com/55206834/87110198-711c7600-c234-11ea-9f01-a4eff1e679c1.png)
 
+# **Calling your Web Service from Python**
+
+You can find all the information you need to call your web service from an application by navigating back to the _New Web Services Experience_ page and selecting _Use Endpoint_.
+
+![Use Endpoint](https://user-images.githubusercontent.com/55206834/87115151-74b5fa00-c240-11ea-854a-aae5fa80bb4a.png)
+
+This screen will give you all your access keys and give you sample code to get you started.
+
+![Sample Code](https://user-images.githubusercontent.com/55206834/87115080-39b3c680-c240-11ea-9ee4-6935bfd55d27.png)
+
 # **Conclusion**
 
 We started this exercise with a business problem to solve: create a sentiment analysis tool to predict whether tweets related to your products and services are positive or negative.
