@@ -181,7 +181,7 @@ There is a _Select Columns in Dataset_ module available to assist us with this.
 * Drag and Drop _Select Columns in Dataset_ to your canvas
 * Connect the _Feature Hashing_ module to _Select Columns in Dataset_
 
-![connect](https://user-images.githubusercontent.com/55206834/86656720-ac5d4180-bfb5-11ea-8b21-2ea50e85c0d3.png)
+![Connect](https://user-images.githubusercontent.com/55206834/87174480-3868b500-c2a5-11ea-8436-457f53d05f78.png)
 
 * Set properties by clicking on the module, and then clicking on _Launch column selector_
 * Select the required columns for ML to use (In our case study, we **exclude** the columns “_Sentence_” and “_Preprocessed Sentence_”)
