@@ -235,7 +235,12 @@ We now have our dataset ready for training.
 
 ### **Step 3g – Select and train your model** (7)
 
-Instantiate your model by selecting the classification algorithm. For the purposes of this tutorial, we will be using a Two-class Boosted Decision Tree. We chose the Two-class Boosted Decision Tree as it was an explainable model making it easier for executives to understand the first iteration of this machine learning implementation. We also know that Boosting will improve our results by virtue of it being an ensemble. 
+Instantiate your model by selecting the classification algorithm. For the purposes of this tutorial, we will be using a Two-Class Boosted Decision Tree because it is easy to implement and typically achieves good performance. Using a boosted decision tree allows you to improve upon the results of your decision tree model over multiple iterations. It then makes predictions based on the entire ensemble of trees. (8)
+
+![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png) This type of model is very memory intensive as it holds everything in the current implementation in memory. You must pay special attention to the model training speed as the dataset starts to increase in size if you choose this model in a real-life scenario. This is not a concern for this tutorial as our dataset is very small.
+
+For further information, please refer to this [link](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/two-class-boosted-decision-tree) from Microsoft on Two-Class Boosted Decision Trees.
+
 * In the search box, enter “_classification_”, and you see the classification algorithms available
 * Choose your algorithm. In our tutorial, we will be using _Two-class Boosted Decision Tree_
 * Drag and Drop the _Two-class Boosted Decision Tree_ classifier to your canvas 
@@ -308,7 +313,7 @@ We chose to look at F1 score for our model as our dataset was fairly well balanc
 
 You can now compare the results you achieved in this tutorial to the results of your NLP Individual Assignment. Feel free to play around with the tutorial and change the pre-processing you do on your data, the model you use and the hyperparameter tuning/model parameters. 
 
-## **Deploying your model** (8)
+## **Deploying your model** (9)
 
 When you are satisfied with your model, it is time to deploy it to production.  
 
@@ -396,7 +401,7 @@ Example of negative sentiment test:
 
 We started this exercise with a business problem to solve.  
 
-Now that you have quickly built a sentiment analysis experiment, you can impress your new boss with an example of the art-of-the-possible. If this is well received and a business case can be made to implement this type of solution, you can refine your model and when you are happy with your results you can easily extend it for use as an API in a custom-built script for free (for up to 1,000 transactions). You can link to it using the Excel add-in (9) and allow your customer experience team to have direct access to it or your could create an application that references the API and:
+Now that you have quickly built a sentiment analysis experiment, you can impress your new boss with an example of the art-of-the-possible. If this is well received and a business case can be made to implement this type of solution, you can refine your model and when you are happy with your results you can easily extend it for use as an API in a custom-built script for free (for up to 1,000 transactions). You can link to it using the Excel add-in (10) and allow your customer experience team to have direct access to it or your could create an application that references the API and:
 * Scrapes tweets
 * Classifies them as positive or negative
 * Generates reports on that data for your customer experience team
@@ -419,9 +424,12 @@ We hope you enjoyed this tutorial and that you have a better understanding of ho
 
 (7) To learn more about training models, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/train-model?redirectedfrom=MSDN
 
-(8) For more information on web services, please refer to: https://services.azureml.net/subscriptions/9887b0c8-8f21-4ab3-9265-d4e879c54888/resourceGroups/bamservice/providers/Microsoft.MachineLearning/webServices/Sentiment2create.2020.7.3.22.56.47.8/test/rrs
+(8) For more information on Two-Class Boosted Decision Trees, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/two-class-boosted-decision-tree
 
-(9) For more information on how to use Excel to access your Azure ML web service, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/excel-add-in-for-web-services
+(9) For more information on web services, please refer to: https://services.azureml.net/subscriptions/9887b0c8-8f21-4ab3-9265-d4e879c54888/resourceGroups/bamservice/providers/Microsoft.MachineLearning/webServices/Sentiment2create.2020.7.3.22.56.47.8/test/rrs
+
+(10) For more information on how to use Excel to access your Azure ML web service, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/excel-add-in-for-web-services
+
 
 
 
