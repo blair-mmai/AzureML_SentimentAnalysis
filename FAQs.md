@@ -16,3 +16,7 @@ This process flow might help you. As you see below, you will usually follow a si
 
 
 ![Azure steps process flow](https://user-images.githubusercontent.com/55206834/86854904-5bb61900-c087-11ea-80a3-286c78de2638.jpg)
+
+## **2. Is it possible for me to remove certain stopwords? e.g. "not"**
+
+Yes it is! For more information on how to do this, please refer to this Microsoft [link](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/preprocess-text#bkmk_TechnicalNotes). 
