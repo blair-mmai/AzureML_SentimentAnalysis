@@ -120,7 +120,7 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ![preprocess Properties](https://user-images.githubusercontent.com/55206834/86879972-03e4d580-c0ba-11ea-8213-97f2d0f73938.png)
 
-![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png)  Although we selected the default values for data preprocessing in our tutorial, remember that too much preprocessing can negatively impact your data classification results. For instance, removing stopwords will remove "not" from your dataset can take out the negation implication of a bad sentiment. (e.g. "the food was not good" with stopwords removed becomes "food good" which is not the original intent of the tweet)
+![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png)  Although we selected the default values for data preprocessing in our tutorial, remember that too much preprocessing can negatively impact your data classification results. Please make sure you do data analysis before determining which are the most appropriate preprocessing options to apply. 
 
 * > Click _Launch Column selector_
 
@@ -165,8 +165,7 @@ Note: all other fields should be on the left-hand side under _AVAILABLE COLUMNS_
 ![Select preprocessed Sentence](https://user-images.githubusercontent.com/55206834/86881751-00068280-c0bd-11ea-91ae-b1b3bc05b9e6.png)
 
 * Set the properties you want to use to vectorize the data
-* For the purposes of this tutorial, we have used hashing **bitsize** of _8_  with **n-grams** of _1_
-We selected n-grams of 1 in this case because our dataset contains both food reviews and movie reviews. Using a higher value in n-grams would not very useful as the vector space will already be sparse with not many features overlapping between food references and movie references and selecting a higher n-gram value would just make that issue worse. With a more consistent dataset, you can select a higher value for n-grams to embed context in your vector space.
+* For the purposes of this tutorial, we have used hashing bitsize of 8 with n-grams of 1. We selected n-grams of 1 because our dataset is not very diverse: it contains only reviews on food, products and movies. We were concerned that setting the n-grams higher than 1 (e.g. bigrams) would prevent the model from generalizing well on different types of tweets during deployment. For example, if we had used something like trigrams, there is a risk that the new test data would not have similar trigrams. The resulting vectorized test set would be extremely sparse resulting in poor results. If the dataset size was drastically increased, you can select a higher value for n-grams to embed context in your vector space.
 
 ![Hash Properties](https://user-images.githubusercontent.com/55206834/86881969-72776280-c0bd-11ea-8220-1a24db5eb3b5.png)
 
@@ -272,7 +271,7 @@ Set the properties for your model.
 
 ![DT properties](https://user-images.githubusercontent.com/55206834/86885826-ec124f00-c0c3-11ea-8227-76d9e4e017f7.png)
 
-![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png)  Beware of using the default values in real-world applications as you can end up with large trees or even overfit your model. Although we are only showing you one model with no hyperparameter tuning in this tutorial, it is recommended that you test several models and perform hyperparameter tuning in real-world scenarios. 
+![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png)  Beware of using the default values in real-world applications as you can end up with large decision trees that overfit your model and do not generalize well during deployment. Although we are only showing you one model with no hyperparameter tuning in this tutorial, it is recommended that you test several models and perform hyperparameter tuning in real-world scenarios. In order to understand further how to do the latter in Azure ML Studio, please follow this [link](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/tune-model-hyperparameters).
 
 * _Run_ the _Train Model_ module by right-clicking on it and selecting _Run Selected_ (remember to look for the green checkmark of a successful run before moving on)
 
@@ -301,14 +300,13 @@ The model training is now complete.
 
 ![visualize menu](https://user-images.githubusercontent.com/55206834/86886795-8757f400-c0c5-11ea-977c-185ffa637b29.png)
 
-We chose to look at F1 score for our model as our dataset was fairly well balanced and F1 score takes into account precision and recall. Our model had an F1 score of 0.717 which is not too bad for a quick first attempt at sentiment analysis considering our dataset contains two different types of tweets (food and movie reviews). We would not, however, recommend rolling this out as-is in production. We would want to try other models, adjust our pre-processing and perform hyperparameter tuning to improve this score before rolling it out. 
-
-![Visualize ROC](https://user-images.githubusercontent.com/55206834/86887031-f3d2f300-c0c5-11ea-9042-b5b82491fc03.png)
+![F1 Score](https://user-images.githubusercontent.com/55206834/87107541-036d4b80-c22e-11ea-9264-327141ec0865.png)
 
 ## **Analyze results**
 
-You can now compare the results you achieved in this tutorial to the results of your NLP Individual Assignment.  
-Feel free to play around with the tutorial and change the pre-processing you do on your data, the model you use or it’s parameters.
+We chose to look at F1 score for our model as our dataset was fairly well balanced. F1 score is the harmonic mean of precision and recall. It will be more sensitive to the weaker of the two metrics, which makes the F1 score a conservative estimate of the model performance. Our model had an F1 score of 0.717 which is not too bad for a quick first attempt at sentiment analysis considering our dataset contains two different types of tweets (food/product and movie reviews). We would not, however, recommend rolling this out as-is because the impact of misclassifying a tweet is too large (28%). Translating this to business terms, I would predict that 79 people liked my restaurant/movie/product when, in fact, they did not. This error would lead me into a false sense of security instead of prompting me to improve my business, which could have a disastrous impact. 
+
+You can now compare the results you achieved in this tutorial to the results of your NLP Individual Assignment. Feel free to play around with the tutorial and change the pre-processing you do on your data, the model you use and the hyperparameter tuning/model parameters. 
 
 ## **Deploying your model** (8)
 
@@ -352,7 +350,7 @@ You will now see a second tab with your Predictive experiment.
 * Click on _Launch column selector_ 
 * Click on BY NAME on the right-hand side
 * Scroll all the way down the AVAILABLE COLUMNS column on the left to find **Scored Labels** and **Scored Probabilities** and select them both (click first, hold down shift and click the second)
-* Move them to the right hand Selected columns column by clicking the arrow in the middle
+* Move them to the right-hand Selected columns column by clicking the arrow in the middle
 
 ![select scored cols](https://user-images.githubusercontent.com/55206834/86888591-69d85980-c0c8-11ea-9e03-ee94bd903f25.png)
 
