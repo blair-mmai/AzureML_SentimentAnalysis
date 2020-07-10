@@ -144,7 +144,7 @@ Now it is time to start adding the modules to your experiment canvas.
 
 ### **Step 3d – Vectorization**
 
-The next step is to extract features you want to use using feature hashing. Hashing is how Microsoft Azure ML converts plain text to a vector (a set of integer features) (5)
+The next step is to extract features you want to use using feature hashing. Hashing is how Microsoft Azure ML converts plain text to a vector (a set of integer features). It creates a dictionary of n-grams and calculates the frequency of terms and is based off the [Vowpal Wabbit framework](https://github.com/VowpalWabbit/vowpal_wabbit/wiki). (5)
 
 * In the search box, enter “_feature_”, and you see _Feature Hashing_ Module under _Text Analytics_ in the left-hand menu
 
@@ -383,7 +383,7 @@ The Web service can now be deployed
 
 * Click on _Test Endpoint_
 
-![Test Endpoint](https://user-images.githubusercontent.com/55206834/86998414-58518900-c17e-11ea-8334-58ae8728cb83.png)
+![Test Endpoint](https://user-images.githubusercontent.com/55206834/87109651-3cf48580-c233-11ea-82f6-4fe16ae8f7b8.png)
 
 You will see a screen to test your web service.  
 * Type in some text in the Sentence field and click on the _Test Request Response_ 
@@ -391,17 +391,26 @@ Your result will appear on the right-hand side of the screen.
 
 Example of positive sentiment test:
 
-![Post test output](https://user-images.githubusercontent.com/55206834/86998235-f1cc6b00-c17d-11ea-9a34-463f5e751327.png)
+![Positive test sentence](https://user-images.githubusercontent.com/55206834/87110143-54803e00-c234-11ea-84ab-eb4f5ce8e6b9.png)
+
+Output:
+
+![Positive test output](https://user-images.githubusercontent.com/55206834/87110097-387c9c80-c234-11ea-8c29-e63364152083.png)
 
 Example of negative sentiment test:
 
-![Neg test output](https://user-images.githubusercontent.com/55206834/86997992-6a7ef780-c17d-11ea-81e1-bf173f937558.png)
+![Negative test sentence](https://user-images.githubusercontent.com/55206834/87110250-898c9080-c234-11ea-920c-d66f46ee161f.png)
+
+Output:
+
+![Negative test output](https://user-images.githubusercontent.com/55206834/87110198-711c7600-c234-11ea-9f01-a4eff1e679c1.png)
 
 # **Conclusion**
 
-We started this exercise with a business problem to solve.  
+We started this exercise with a business problem to solve: create a sentiment analysis tool to predict whether tweets related to your products and services are positive or negative.
 
-Now that you have quickly built a sentiment analysis experiment, you can impress your new boss with an example of the art-of-the-possible. If this is well received and a business case can be made to implement this type of solution, you can refine your model and when you are happy with your results you can easily extend it for use as an API in a custom-built script for free (for up to 1,000 transactions). You can link to it using the Excel add-in (10) and allow your customer experience team to have direct access to it or your could create an application that references the API and:
+Now that you have quickly built a sentiment analysis experiment, you can impress your new boss with an example of the art-of-the-possible. If this is well received and a business case can be made to implement this type of solution, you can refine your model and when you are happy with your results you can easily extend it for use as an API in a custom-built script for free (for up to 1,000 transactions). You can link to it using the Excel add-in (10) and allow your customer experience team to have direct access to it or you could create an application that references the API to:
+
 * Scrapes tweets
 * Classifies them as positive or negative
 * Generates reports on that data for your customer experience team
