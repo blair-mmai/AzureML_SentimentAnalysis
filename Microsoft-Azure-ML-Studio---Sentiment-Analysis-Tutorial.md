@@ -22,8 +22,6 @@ Before starting this tutorial, you will need to:
 
 2. Ensure you have Microsoft Azure access – you should have this from MMAI 863.  Try your login [here](https://studio.azureml.net/)  
 
-If you do not have an Azure account, please go here for steps to create your account (link to how to set up your account pending)
-
 ## **Actions**
 
 Now that you have Azure access and the file you want to use downloaded; we are ready to begin the tutorial.
