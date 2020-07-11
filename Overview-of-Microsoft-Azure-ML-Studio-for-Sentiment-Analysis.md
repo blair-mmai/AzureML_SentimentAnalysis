@@ -14,13 +14,13 @@ PaaS is a category of cloud computing services that provides a platform (a mediu
 ## **Top PaaS Vendors**
 
 The PaaS space is largely dominated by three companies (as of year ending in June 2019) (1):
-1. Amazon with a market-leading AWS offering and 23.6% of the market   
-2. Microsoft with Azure with 17% of the market
+1. Amazon's market-leading AWS offering with 23.6% of the market   
+2. Microsoft's Azure platform with 17% of the market
 3. Google Cloud with 7.1% of the market 
 
 ## **Why Azure?**
 
-A breakdown of the machine learning subsets within these top three PaaS providers are highlighted in Table 1 below (2). From this table, it can be observed that Microsoft Azure Machine Learning (ML) Studio scores the highest overall in terms of flexibility, usability, and accuracy while maintaining a low training time. A brief explanation of why ML Studio does so well is below:
+A breakdown of the machine learning subsets within these top three PaaS providers are highlighted in Table 1 below (2). From this table, it can be observed that Microsoft Azure Machine Learning (ML) Studio scores the highest overall in terms of flexibility, usability, and accuracy maintaining a low training time, which meets our expectations outlined in the business problem. A brief explanation of why ML Studio does so well is below:
 
 * It is a fully managed collaborative drag-and-drop dashboard tool, which makes it easy to quickly learn and use
 * It publishes models as web services that can easily be consumed by custom apps or BI tools such as Excel (3)
@@ -30,7 +30,7 @@ A breakdown of the machine learning subsets within these top three PaaS provider
 
 ## **Azure Text Analytics Functionality & Use Cases**
 
-ML Studio’s Text Analytics API is specifically designed for text related business cases such as classifying our tweet dataset. The four analysis tools within this API are found below with example use cases (4).  
+ML Studio’s Text Analytics API is specifically designed for text related business cases such as classifying your tweet dataset. The four analysis tools within this API are found below with example use cases (4).  
 
 ### _Sentiment Analysis_ <-- **This is what your business use case requires**
 
@@ -66,7 +66,7 @@ More information on each of these tools can be found [ here]( https://docs.micro
 
 # **Azure for Sentiment Analysis**
 
-In conclusion, Azure’s ML Studio is well suited for the business problem you have been given: using sentiment analysis to classify tweets. This specific PaaS is user friendly and provides the end-to-end ability for users to build, test and deploy predictive analytics solutions on their data. The Text Analytics API within ML Studio is extremely powerful and already contains pre-existing Sentiment Analysis tools and experiments, which can expedite project implementation. 
+In conclusion, Azure’s ML Studio is well suited for the business problem you have been given: using sentiment analysis to classify tweets. This specific PaaS is user friendly and provides the end-to-end ability for you to build, test and deploy predictive analytics solutions on your data. The Text Analytics API within ML Studio is extremely powerful and already contains pre-existing Sentiment Analysis tools and experiments, which can expedite project implementation. 
 
 Good luck with running your [tutorial](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/Microsoft-Azure-ML-Studio---Sentiment-Analysis-Tutorial). Remember to check the [FAQs](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/FAQs) if you run into issues.
 
@@ -75,7 +75,7 @@ Good luck with running your [tutorial](https://github.com/cShellinc/AzureMLTutor
 
 (1) https://www.statista.com/statistics/1052864/worldwide-iaas-paas-vendor-share/
 
-(2) https://medium.com/kontikilabs/comparing-machine-learning-ml-services-from-various-cloud-ml-service-providers-63c8a2626cb6 
+(2) https://www.slideshare.net/ivoandreev/azure-machine-learning-and-ml-on-premises (slide 10)
 
 (3) https://www.mercurysolutions.co/blog/top-11-business-benefits-of-microsoft-azure 
 
