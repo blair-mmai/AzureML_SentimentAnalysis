@@ -54,7 +54,7 @@ You should now be at this screen:
 * Navigate to the _Bathurst_Tutorial_sentiment.csv_ file you downloaded in the pre-conditions
 * Click the _checkmark_
 
-![Upload new dataset](https://user-images.githubusercontent.com/55206834/86878174-5c19d880-c0b6-11ea-9a76-1a75bd61292d.png)
+![Upload new dataset](https://user-images.githubusercontent.com/55206834/87226944-467e0a80-c365-11ea-910f-a7d8660f9cc7.png)
 
 * You now have your dataset loaded and ready to use
 
