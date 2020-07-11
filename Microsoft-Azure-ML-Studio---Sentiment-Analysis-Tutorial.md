@@ -2,6 +2,12 @@
 
 For a description of the Business Problem you are solving in this tutorial, please refer to the [Overview](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis/wiki/Overview-of-Microsoft-Azure-ML-Studio-for-Sentiment-Analysis) page.
 
+## **Important Information to Note**
+
+Throughout this tutorial, you will see reference numbers like this: (1). We have included a set of reference links for you at the bottom of the tutorial if you would like more information on any of the sections.
+
+This tutorial works best on a **Chrome** browser. If you are using another browser, please close now and start the tutorial steps from Chrome.
+
 ## **Task Outline**
 
 In this tutorial you will:
