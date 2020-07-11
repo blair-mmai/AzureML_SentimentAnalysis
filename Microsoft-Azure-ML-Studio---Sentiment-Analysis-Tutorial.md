@@ -382,6 +382,8 @@ The Web service can now be deployed
 
 ## **Step 3 – Test**
 
+![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png)  If you are using Safari, you may not be able to execute the following steps, please make sure you are using the **Chrome** browser for the best user experience in this tutorial.
+
 * You can test your newly created web service by selecting _New Web Service Experience_
 
 ![Test_New Web Services Experience](https://user-images.githubusercontent.com/55206834/86998303-19bbce80-c17e-11ea-9a24-3ea85109e140.png)
