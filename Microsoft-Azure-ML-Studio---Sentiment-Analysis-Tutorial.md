@@ -6,7 +6,7 @@ For a description of the Business Problem you are solving in this tutorial, plea
 
 Throughout this tutorial, you will see reference numbers like this: (1). We have included a set of reference links for you at the bottom of the tutorial if you would like more information on any of the sections.
 
-![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png)  This tutorial works best on a **Chrome** browser. If you are using another browser, please close now and start the tutorial steps from Chrome.
+![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png)  This tutorial works best on a _**Chrome**_ browser. If you are using another browser, please close now and start the tutorial steps from Chrome.
 
 ## **Task Outline**
 
