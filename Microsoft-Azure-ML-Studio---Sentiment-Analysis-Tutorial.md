@@ -409,7 +409,7 @@ Output:
 
 ![Negative test output](https://user-images.githubusercontent.com/55206834/87110198-711c7600-c234-11ea-9f01-a4eff1e679c1.png)
 
-# **Calling your Web Service from Python**
+# **Calling your Web Service from Python** (10)
 
 You can find all the information you need to call your web service from an application by navigating back to the _New Web Services Experience_ page and selecting _Use Endpoint_.
 
@@ -423,9 +423,9 @@ This screen will give you all your access keys and give you sample code to get y
 
 We started this exercise with a business problem to solve: create a sentiment analysis tool to predict whether tweets related to your products and services are positive or negative.
 
-Now that you have quickly built a sentiment analysis experiment, you can impress your new boss with an example of the art-of-the-possible. If this is well received and a business case can be made to implement this type of solution, you can refine your model and when you are happy with your results you can easily extend it for use as an API in a custom-built script for free (for up to 1,000 transactions). You can link to it using the Excel add-in (10) and allow your customer experience team to have direct access to it or you could create an application that references the API to:
+Now that you have quickly built a sentiment analysis experiment, you can impress your new boss with an example of the art-of-the-possible. If this is well received and a business case can be made to implement this type of solution, you can refine your model and when you are happy with your results you can easily extend it for use as an API in a custom-built script for free (for up to 1,000 transactions). You can link to it using the Excel add-in (11) and allow your customer experience team to have direct access to it or you could create an application that references the API to:
 
-* Scrapes tweets (11)
+* Scrapes tweets (12)
 * Classifies them as positive or negative 
 * Generates reports on that data for your customer experience team
 
@@ -451,9 +451,11 @@ We hope you enjoyed this tutorial and that you have a better understanding of ho
 
 (9) For more information on web services, please refer to: https://services.azureml.net/subscriptions/9887b0c8-8f21-4ab3-9265-d4e879c54888/resourceGroups/bamservice/providers/Microsoft.MachineLearning/webServices/Sentiment2create.2020.7.3.22.56.47.8/test/rrs
 
-(10) For more information on how to use Excel to access your Azure ML web service, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/excel-add-in-for-web-services
+(10) For more information on how to reference your web service through the API (including sample code), please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/consume-web-services
 
-(11) For more information on how to scrape tweets, please go to: https://dev.twitter.com/apps/new and sign up for a developer account and you will find a lot of useful information there
+(11) For more information on how to use Excel to access your Azure ML web service, please refer to: https://docs.microsoft.com/en-us/azure/machine-learning/studio/excel-add-in-for-web-services
+
+(12) For more information on how to scrape tweets, please go to: https://dev.twitter.com/apps/new and sign up for a developer account and you will find a lot of useful information there
 
 
 
