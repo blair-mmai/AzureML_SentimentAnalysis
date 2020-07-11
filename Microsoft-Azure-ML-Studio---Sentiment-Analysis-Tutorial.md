@@ -327,7 +327,7 @@ When you are satisfied with your model, it is time to deploy it to production.
 
 * Click _SET UP WEB SERVICE_ and then _Predictive web service (recommended)_
 
-![setup web service](https://user-images.githubusercontent.com/55206834/86718092-c49e8200-bff0-11ea-8288-ff89d6e6c835.png)
+![Predictive Web Service](https://user-images.githubusercontent.com/55206834/87230678-9d90d900-c37f-11ea-8992-3e60dde081f9.png)
 
 ![warning](https://user-images.githubusercontent.com/55206834/86663588-df0a3880-bfbb-11ea-9353-07aaba61152f.png) At this point, if you don’t see the _SET UP WEB SERVICE_ option, you may not have run your full experiment, please go back and do so now and try again.
 
