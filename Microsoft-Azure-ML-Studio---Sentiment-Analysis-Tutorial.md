@@ -414,6 +414,10 @@ Output:
 
 You can find all the information you need to call your web service from an application by navigating back to the _New Web Services Experience_ page and selecting _Use Endpoint_.
 
+You can get back to the _New Web Services Experience_ page easily by clicking on the _Quickstart_ button at the top of the page you are testing from.
+
+![Quickstart](https://user-images.githubusercontent.com/55206834/87230899-d8474100-c380-11ea-9f2f-d09b5c0613ae.png)
+
 ![Use Endpoint](https://user-images.githubusercontent.com/55206834/87115151-74b5fa00-c240-11ea-854a-aae5fa80bb4a.png)
 
 This screen will give you all your access keys and give you sample code to get you started.
