@@ -21,6 +21,8 @@ This process flow might help you. As you see below, you will usually follow a si
 
 Yes it is! For more information on how to do this, please refer to this Microsoft [link](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/preprocess-text#bkmk_TechnicalNotes) and this [experiment](https://gallery.azure.ai/Experiment/How-to-modify-default-stopword-list-1). 
 
-## **3. I get a "loading data" message when trying to execute Step X (to test my endpoint)**
+## **3. I get a "loading data" message when trying to execute Step 3 - Test (to test my endpoint)**
 
-Are you using Safari as your browser? As noted at the top of the tutorial, this tutorial works best on a Chrome browser. This could be the issue you are encountering.  Please close your browser and open a Chrome browser to pick up the tutorial from the step before the one you are on.
+![Test Error](https://user-images.githubusercontent.com/55206834/87231115-6d970500-c382-11ea-9d7b-d0683a351d3c.jpg)
+
+Are you using Safari as your browser? As noted at the top of the tutorial, this tutorial works best on a **Chrome** browser. This could be the issue you are encountering.  Please close your browser and open a **Chrome** browser to pick up the tutorial from the step before the one you are on.
