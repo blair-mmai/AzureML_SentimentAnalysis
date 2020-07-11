@@ -22,7 +22,7 @@ In this tutorial you will:
 Before starting this tutorial, you will need to:
 1. Download [Bathurst_Tutorial_sentiment.csv](https://github.com/cShellinc/AzureMLTutorial_SentimentAnalysis) 
 > To download the file from the link, click on Code and select Download Zip
-> Unzip the file and keep a note of where you have it as you will need it's location later in the tutorial
+> Unzip the file and **keep a note of where you have downloaded it** as you will need its location later in the tutorial
 
 ![download file](https://user-images.githubusercontent.com/55206834/86694747-e6403f00-bfd9-11ea-9069-397e50b29005.png)
 
@@ -30,7 +30,7 @@ Before starting this tutorial, you will need to:
 
 ## **Actions**
 
-Now that you have Azure access and the file you want to use downloaded; we are ready to begin the tutorial.
+Now that you have Azure access and the file you want to use downloaded (from pre-condition step 1), we are ready to begin the tutorial.
 
 ### **Step 1 – Select your workspace** (1)
 * Navigate to [https://studio.azureml.net/](https://studio.azureml.net/) and log on to Azure studio 
@@ -169,7 +169,7 @@ Note: all other fields should be on the left-hand side under _AVAILABLE COLUMNS_
 ![Select preprocessed Sentence](https://user-images.githubusercontent.com/55206834/86881751-00068280-c0bd-11ea-91ae-b1b3bc05b9e6.png)
 
 * Set the properties you want to use to vectorize the data
-* For the purposes of this tutorial, we have used hashing bitsize of 8 with n-grams of 1. We selected n-grams of 1 because our dataset is not very diverse: it contains only reviews on food, products and movies. We were concerned that setting the n-grams higher than 1 (e.g. bigrams) would prevent the model from generalizing well on different types of tweets during deployment. For example, if we had used something like trigrams, there is a risk that the new test data would not have similar trigrams. The resulting vectorized test set would be extremely sparse resulting in poor results. If the dataset size was drastically increased, you can select a higher value for n-grams to embed context in your vector space.
+* For the purposes of this tutorial, we have used hashing bitsize of 8 with n-grams of 1. We selected n-grams of 1 because our dataset is not very diverse: it contains only reviews on food, products and movies. We were concerned that setting the n-grams higher than 1 (e.g. bigrams) would prevent the model from generalizing well on different types of tweets during deployment. For example, if we had used something like trigrams, there is a risk that the new test data would not have similar trigrams. The resulting vectorized test set would be extremely sparse resulting in poor results. If the training dataset size was drastically increased, you can select a higher value for n-grams to embed context in your vector space.
 
 ![Hash Properties](https://user-images.githubusercontent.com/55206834/86881969-72776280-c0bd-11ea-8220-1a24db5eb3b5.png)
 
@@ -192,7 +192,7 @@ There is a _Select Columns in Dataset_ module available to assist us with this.
 * Set properties by clicking on the module, and then clicking on _Launch column selector_
 * Select the required columns for ML to use (In our case study, we **exclude** the columns “_Sentence_” and “_Preprocessed Sentence_”)
 * > Click on WITH RULES on the left-hand side
-* > Select **Begin with: all columns** and **Exclude** the **column names** _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
+* > Select **Begin with: ALL COLUMNS** and **Exclude** the **column names** _Sentence_ and _preprocessed sentence_) *remember your ML algorithm doesn’t understand plain text so it only wants the vectorized data
 * > Click on the _checkmark_
 
 ![select columns](https://user-images.githubusercontent.com/55206834/86883169-80c67e00-c0bf-11ea-983f-4adfcabc7f4f.png)
@@ -223,9 +223,11 @@ We will use Azure’s built-in Split Data module.
 
 ![split properties](https://user-images.githubusercontent.com/55206834/86884158-29c1a880-c0c1-11ea-9ec8-dd4bc367181f.png)
 
-**Note**: Once you set _Stratified split_ to _True_, The _Launch column selector_ option will appear in the right-hand column
+We used an 80/20 split because it is considered best practice. If our dataset had been too small, we would have chosen a 70/30 split instead. We set **Stratified split** to _True_ because we want to ensure that the training set contains a distribution of Class 1 and Class 0 instances representative of the original dataset's distribution. For example, our full dataset contains a 50/50 split of Class 1 and Class 0 instances. Therefore, we want our training set to also have a 50/50 split. If **Stratified split** is set to _False_, there is a risk that the training set would contain more of one class than another, which could negatively impact the model's performance.
 
-You now want to select a single column for the stratification. In our instance: _Polarity_
+**Note**: Once you set **Stratified split** to _True_, The _Launch column selector_ option will appear in the right-hand column
+
+You now need to select the column that we want to base the stratification split off of. This is going to be the Target feature: _Polarity_
 * > Click on _Launch column selector_
 * > Click on _BY NAME_
 * > Click on _Polarity_ in the left-hand column and move it to the right-hand column under _SELECTED COLUMNS_ using the arrow in the middle
@@ -264,13 +266,13 @@ For further information, please refer to this [link](https://docs.microsoft.com/
 * Set training properties by clicking on the module _Train Model_ 
 * Click on _Launch Column Selector_ 
 * > Click on _BY NAME_
-* > Select the _Polarity_ column on the right-hand side and move it to the left-hand side under _SELECTED COLUMNS_ using the arrow in the middle
+* > Select the _Polarity_ column on the left-hand side and move it to the right-hand side under _SELECTED COLUMNS_ using the arrow in the middle
 * > Click on the _checkmark_
 
 ![select train cols](https://user-images.githubusercontent.com/55206834/86885555-7d34f600-c0c3-11ea-9300-1fdef642ac61.png)
 
 Set the properties for your model.
-* Click on your _Two-Class Boosted Decision Tree_ module and set the parameters on the left-hand side
+* Click on your _Two-Class Boosted Decision Tree_ module and set the parameters on the right-hand side
 * In our tutorial, we used the default settings of:
 * > Max number of leaves = 20
 * > Min number of samples = 10
@@ -313,9 +315,9 @@ The model training is now complete.
 
 ## **Analyze results**
 
-We chose to look at F1 score for our model as our dataset was fairly well balanced. F1 score is the harmonic mean of precision and recall. It will be more sensitive to the weaker of the two metrics, which makes the F1 score a conservative estimate of the model performance. Our model had an F1 score of 0.717 which is not too bad for a quick first attempt at sentiment analysis considering our dataset contains two different types of tweets (food/product and movie reviews). We would not, however, recommend rolling this out as-is because the impact of misclassifying a tweet is too large (28%). Translating this to business terms, I would predict that 79 people liked my restaurant/movie/product when, in fact, they did not. This error would lead me into a false sense of security instead of prompting me to improve my business, which could have a disastrous impact. 
+We chose to look at F1 score for our model as our dataset was fairly well balanced. F1 score is the harmonic mean of precision and recall. It will be more sensitive to the weaker of the two metrics, which makes the F1 score a conservative estimate of the model performance. Our model had an F1 score of 0.717 which is not too bad for a quick first attempt at sentiment analysis considering our dataset contains two different types of tweets (food/product and movie reviews). We would not, however, recommend rolling this out as-is because the impact of misclassifying a tweet is too large (28%). Translating this to business terms, the model would predict that 79 people liked your restaurant/movie/product when, in fact, they did not. This error would lead you into a false sense of security instead of prompting you to improve your business, which could have a disastrous impact. 
 
-You can now compare the results you achieved in this tutorial to the results of your NLP Individual Assignment. Feel free to play around with the tutorial and change the pre-processing you do on your data, the model you use and the hyperparameter tuning/model parameters. 
+You can now compare the results you achieved in this tutorial to the results from your NLP Individual Assignment. Feel free to play around with the tutorial and change the pre-processing you do on your data, the model you use and the hyperparameter tuning/model parameters. 
 
 ## **Deploying your model** (9)
 
@@ -341,7 +343,6 @@ You will now see a second tab with your Predictive experiment.
 
 ![scored dataset](https://user-images.githubusercontent.com/55206834/86720831-66bf6980-bff3-11ea-9fd5-34716405a02c.png)
 
-* The Score Model will contain all the features used to train the model plus 2 other features (Scored Labels, and Scored Probabilities) 
 * In the search in the left-hand column, type "select columns"
 
 ![select cols](https://user-images.githubusercontent.com/55206834/86887945-642e4400-c0c7-11ea-8025-4ec424c1df6c.png)
